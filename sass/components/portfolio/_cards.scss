@@ -1,0 +1,89 @@
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 50px;
+    margin-bottom: 94px;
+}
+
+.card-list__item {
+    width: 370px;
+    height: 404px;
+    background: $white-text;
+    border: 1px solid #EEEEEE;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.card-list__item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.card-list__item:nth-child(n+6) {
+    margin-bottom: 0;
+}
+
+.card-list__item:hover .card-overlay {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.card-overlay {
+    position: absolute;
+    background-color: rgba(33, 150, 243, 0.9);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transform: scale(0);
+    transition: transform 250ms cubic-bezier(0.165, 0.84, 0.44, 1) 500ms , opacity 250ms cubic-bezier(0.165, 0.84, 0.44, 1) 500ms;
+}
+
+.card-overlay:hover {
+    opacity: 1;
+}
+
+.card-overlay__paragraph {
+    font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+letter-spacing: 0.03em;
+color: $white-text;
+text-align: center;
+justify-content: center;
+padding-top: 118px;
+}
+
+.card-description {
+    padding-left: 24px;
+    padding-top: 20px;
+}
+
+.card-description__title {
+    width: 322px;
+        height: 36px;
+        left: 639px;
+        top: 576px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        color: $main-text;
+        margin-bottom: 20px;
+}
+
+.card-description__paragraph {
+    width: 322px;
+        height: 30px;
+        left: 639px;
+        top: 616px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.9px;
+        letter-spacing: 0.03em;
+        color: #757575;
+}

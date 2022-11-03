@@ -1,0 +1,34 @@
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    font-family: 'Roboto';
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+footer {
+    height: 252px;
+    background: #2F303A;
+    display: flex;
+    padding-left: 215px;
+    padding-top: 60px;
+}
+
+.logo {
+    color: #2196F3;
+    font-family: 'Raleway';
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}

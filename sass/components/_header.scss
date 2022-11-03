@@ -1,0 +1,83 @@
+
+
+.logo--header {
+    color: #000000;
+}
+
+/* Список посилань */
+
+.links-list {
+    list-style: none;
+    display: flex;
+    margin-left: 93px;
+}
+
+.links-list__link {
+    color: $main-text;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    margin-right: 54px;
+    transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
+    position: relative;
+    padding-bottom: 31px;
+}
+
+.links-list__item:last-child {
+    margin-right: 0;
+}
+
+.links-list__link:hover {
+    color: $accent;
+}
+
+.links-link--active-page::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    border-radius: 4px;
+    height: 4px;
+    background-color: $accent;
+    width: 100%;
+}
+
+/* Список контактів */
+
+.contacts-list {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+
+.contacts-list__item {
+    margin-right: 50px;
+       transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
+}
+
+.contacts-list__item:last-child {
+    margin-right: 0;
+}
+
+.contacts-list__link {
+    display: flex;
+        align-items: center;
+     color: #757575;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
+}
+
+.contacts-list__link:hover {
+     color: $accent;
+     fill: $accent;
+}
+
+.contacts-list__icon {
+    fill: currentColor;
+    margin-right: 10px;
+}

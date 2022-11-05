@@ -14,8 +14,7 @@
 }
 
 .team-list {
-    list-style: none;
-    display: flex;
+    @extend %list;
 }
 
 .team-list__card {

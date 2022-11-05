@@ -6,8 +6,7 @@
 /* Список посилань */
 
 .links-list {
-    list-style: none;
-    display: flex;
+    @extend %list;
     margin-left: 93px;
 }
 
@@ -46,8 +45,7 @@
 /* Список контактів */
 
 .contacts-list {
-    list-style: none;
-    display: flex;
+    @extend %list;
     margin-left: auto;
 }
 

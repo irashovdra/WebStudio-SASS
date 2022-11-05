@@ -1,6 +1,5 @@
 .about-list {
-    list-style: none;
-    display: flex;
+    @extend %list;
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -21,8 +20,7 @@ height: 120px;
 background: $background-color;
 border-radius: 4px;
 display: flex;
-align-items: center;
-justify-content: center;
+@include center();
 background-size: 70px;
 content: "";
 background-repeat: no-repeat;

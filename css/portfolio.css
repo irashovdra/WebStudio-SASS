@@ -1,10 +1,29 @@
 @charset "UTF-8";
+.join-list, .card-list, .btn-list, .contacts-list, .links-list {
+  list-style: none;
+  display: flex;
+}
+
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 body {
@@ -37,7 +56,6 @@ footer {
 ul {
   padding: 0;
   margin: 0;
-  list-style: none;
 }
 
 a {
@@ -63,8 +81,6 @@ p {
 
 /* Список посилань */
 .links-list {
-  list-style: none;
-  display: flex;
   margin-left: 93px;
 }
 
@@ -102,8 +118,6 @@ p {
 
 /* Список контактів */
 .contacts-list {
-  list-style: none;
-  display: flex;
   margin-left: auto;
 }
 
@@ -138,8 +152,6 @@ p {
 }
 
 .btn-list {
-  list-style: none;
-  display: flex;
   justify-content: center;
 }
 
@@ -172,9 +184,7 @@ p {
 }
 
 .card-list {
-  display: flex;
   flex-wrap: wrap;
-  list-style: none;
   margin-top: 50px;
   margin-bottom: 94px;
 }
@@ -296,10 +306,6 @@ p {
   text-transform: uppercase;
   color: #FFFFFF;
   margin-bottom: 20px;
-}
-
-.join-list {
-  display: flex;
 }
 
 .join-list__item {

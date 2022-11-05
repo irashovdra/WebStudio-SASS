@@ -14,14 +14,14 @@ margin-bottom: 50px;
 }
 
 .clients-list {
-    display: flex;
+    @extend %list;
 }
 
 .clients-list__item {
     margin-right: 30px;
 }
 
-.clients-list__item:nth-last-child() {
+.clients-list__item:last-child {
     margin-right: 0;
 }
 
@@ -29,8 +29,7 @@ margin-bottom: 50px;
     width: 170px;
     height: 90px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    @include center();
     fill: #AFB1B8;
     border: 1px solid #AFB1B8;
     border-radius: 4px;

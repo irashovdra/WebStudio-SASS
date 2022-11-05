@@ -1,5 +1,5 @@
 .social-list {
-    display: flex;
+    @extend %list;
     justify-content: center;
     margin-bottom: 42px;
 }
@@ -15,8 +15,7 @@
 .social-list__link {
     display: flex;
     padding: 12px;
-    align-items: center;
-    justify-content: center;
+    @include center();
     fill: #AFB1B8;
     transition: background-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms, fill 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms, border-radius 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
 }

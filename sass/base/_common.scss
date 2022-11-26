@@ -29,17 +29,38 @@ nav {
 }
 
 footer {
-    height: 252px;
+    @media screen and (min-width: 480px) {
+    height: 603px;
     background: #2F303A;
-    display: flex;
-    padding-left: 215px;
     padding-top: 60px;
+    padding-bottom: 60px;
+    } 
+
+    @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    height: 463px;
+    padding-left: 76px;
+    } 
+
+    @media screen and (min-width: 1200px) {
+    padding-left: 215px;
+    height: 252px;
+    }
 }
 
 .logo {
+    @media screen and (min-width: 480px) {
     color: #2196F3;
     font-family: 'Raleway';
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 20px;   
+    } 
+
+    @media screen and (min-width: 1200px) {
+    text-align: left;
+    }  
 }

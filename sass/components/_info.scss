@@ -1,25 +1,62 @@
+.info-section {
+    @media screen and (min-width: 768px) {
+    margin-right: 165px;
+    } 
 
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+    }    
+}
 
 .logo--footer {
-       color: #FFFFFF;
+       @media screen and (min-width: 480px) {    
+    color: #FFFFFF;
+    }
 }
 
 .place {
-    margin-bottom: 20px;
+    @media screen and (min-width: 480px) {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0,03em;
     color: $white-text;
+    margin-bottom: 8px;
     font-style: normal;
-    margin-bottom: 10px;
+    text-align: center;
+    } 
+
+    @media screen and (min-width: 1200px) {
+    margin-bottom: 20px;
+    text-align: left;
+    }  
 }
 
+.info-list {
+    @media screen and (min-width: 480px) {
+    list-style: none;
+    margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+    }  
+}
+
+
 .info-list__item {
-    font-weight: 400;
+    @media screen and (min-width: 480px) {
+     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    margin-bottom: 8px;
+    }
+
+    @media screen and (min-width: 1200px) {
     margin-bottom: 10px;
+    text-align: left;
+    }  
 }

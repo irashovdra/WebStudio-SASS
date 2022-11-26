@@ -1,7 +1,8 @@
 .modal {
+    @media screen and (min-width: 480px) {
     position: fixed;
     position: relative;
-    width: 528px;
+    width: 450px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -12,9 +13,15 @@
     z-index: 2;
     transition: transform 250ms cubic-bezier(0.165, 0.84, 0.44, 1) 500ms;
 padding: 40px;
+    }
+
+    @media screen and (min-width: 1200px) {
+    width: 528px;
+    }
 }
 
 .modal__dagger {
+    @media screen and (min-width: 480px) {
     position: absolute;
     top: 14px;
     right: 14px;
@@ -22,43 +29,57 @@ padding: 40px;
 border: 1px solid rgba(0, 0, 0, 0.1);
 border-radius: 100%;
 transition: fill 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
+    }
 }
 
 .modal__dagger:hover {
+    @media screen and (min-width: 480px) {
     fill: $accent;
+    }
 }
 
 .modal__title {
+    @media screen and (min-width: 480px) {
     font-size: 20px;
 line-height: 1.2;
 text-align: center;
 letter-spacing: 0.03em;
 color: $main-text;
 margin-bottom: 12px;
+    }
 }
 
 .modal__item {
-    margin-bottom: 10px;
+    @media screen and (min-width: 480px) {
+    margin-bottom: 4px;
+    } 
 }
 
 .modal__item:last-child {
+    @media screen and (min-width: 480px) {
     margin-bottom: 0;
     margin-bottom: 20px;
+    }
 }
 
 .modal__filling {
+    @media screen and (min-width: 480px) {
     font-weight: 400;
 font-size: 12px;
-line-height: 14px;
+line-height: 1.2;
 letter-spacing: 0.01em;
 color: #757575;
+    }
 }
 
 .modal__inputs {
+    @media screen and (min-width: 480px) {
     position: relative;
+    }
 }
 
 .modal__fitting {
+    @media screen and (min-width: 480px) {
     width: 100%;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -66,24 +87,32 @@ border-radius: 4px;
 position: relative;
 margin-top: 4px;
 transition: border-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
+    }
 }
 
 .modal__fitting:hover {
+    @media screen and (min-width: 480px) {
     border-color: $accent;
+    }
 }
 
 .modal__fitting:hover + .modal-icon {
+    @media screen and (min-width: 480px) {
     fill: $accent;
+    }
 }
 
 .modal__icon {
+    @media screen and (min-width: 480px) {
     position: absolute;
     left: 12px;
     top: 20%;
     transition: fill 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
+    }
 }
 
 .modal__comments {
+    @media screen and (min-width: 480px) {
     width: 100%;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -93,39 +122,51 @@ padding-top: 12px;
 padding-left: 16px;
 margin-top: 4px;
 transition: border-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
+    }
 }
 
 .modal__comments:hover {
+    @media screen and (min-width: 480px) {
     border-color: $accent;
+    }
 }
 
 .modal__agreement {
+    @media screen and (min-width: 480px) {
     display: flex;
     margin-bottom: 30px;
+    }
 }
 
 .modal__checkbox {
+    @media screen and (min-width: 480px) {
     border-color: $main-text;
     margin-right: 8px;
+    }
 }
 
 .modal__agreement-paragraph {
-     font-weight: 400;
+    @media screen and (min-width: 480px) {
+    font-weight: 400;
 font-size: 14px;
 line-height: 1.7;
 letter-spacing: 0.03em;
 color: #757575;
+    }
 }
 
 .modal__agreement-link {
+    @media screen and (min-width: 480px) {
     font-weight: 400;
 font-size: 14px;
 line-height: 1.7;
 letter-spacing: 0.03em;
 color: $accent;
+    }
 }
 
 .modal__btn {
+    @media screen and (min-width: 480px) {
     font-size: 16px;
 line-height: 1.9;
 @include center();
@@ -140,9 +181,11 @@ height: 50px;
 display: block;
 margin-left: auto;
 margin-right: auto;
+    }
 }
 
 .modal__backdrop {
+    @media screen and (min-width: 480px) {
     position: fixed;
     top: 0;
     left: 0;
@@ -150,13 +193,18 @@ margin-right: auto;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);;
     z-index: 10;
+    }
 }
 
 .modal__backdrop.is-hidden {
+    @media screen and (min-width: 480px) {
     opacity: 0;
     pointer-events: none;
+    }
 }
 
 .modal__backdrop.is-hidden .modal {
+    @media screen and (min-width: 480px) {
     transform: translate(50%, -50%);
+    }
 } 

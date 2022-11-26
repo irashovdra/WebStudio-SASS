@@ -1,35 +1,63 @@
 .card-list {
-    @extend %list;
+    @media screen and (min-width: 480px) {
+    list-style: none;   
+    display: flex;
     flex-wrap: wrap;
-    margin-top: 50px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    gap: 30px;
+    } 
+
+    @media screen and (min-width: 1200px) {
+    margin-top: 50px; 
     margin-bottom: 94px;
+    }  
 }
 
 .card-list__item {
-    width: 370px;
+    @media screen and (min-width: 480px) {
+    width: 450px;
     height: 404px;
     background: $white-text;
     border: 1px solid #EEEEEE;
-    margin-right: 30px;
     margin-bottom: 30px;
-    position: relative;
+    position: relative;   
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+
+    @media screen and (min-width: 768px) {
+    width: 354px;
+    }  
+
+    @media screen and (min-width: 1200px) {
+    width: 370px;
+    }  
 }
 
-.card-list__item:nth-child(3n) {
-    margin-right: 0;
-}
+.card-list__photo {
+    @media screen and (min-width: 480px) {
+    width: 450px;
+    }
 
-.card-list__item:nth-child(n+6) {
-    margin-bottom: 0;
+    @media screen and (min-width: 768px) {
+    width: 352px;
+    }  
+
+    @media screen and (min-width: 1200px) {
+    width: 368px;
+    }
 }
 
 .card-list__item:hover .card-overlay {
+    @media screen and (min-width: 480px) {
     opacity: 1;
-    transform: scale(1);
+    transform: scale(1);    
+    }
 }
 
 .card-overlay {
-    position: absolute;
+    @media screen and (min-width: 480px) {
+     position: absolute;
     background-color: rgba(33, 150, 243, 0.9);
     left: 0;
     top: 0;
@@ -37,14 +65,18 @@
     height: 100%;
     opacity: 1;
     transform: scale(0);
-    transition: transform 250ms cubic-bezier(0.165, 0.84, 0.44, 1) 500ms , opacity 250ms cubic-bezier(0.165, 0.84, 0.44, 1) 500ms;
+    transition: transform 250ms cubic-bezier(0.165, 0.84, 0.44, 1) 500ms , opacity 250ms cubic-bezier(0.165, 0.84, 0.44, 1) 500ms;   
+    } 
 }
 
 .card-overlay:hover {
-    opacity: 1;
+    @media screen and (min-width: 480px) {
+    opacity: 1;   
+    }
 }
 
 .card-overlay__paragraph {
+    @media screen and (min-width: 480px) {
     font-weight: 400;
 font-size: 18px;
 line-height: 28px;
@@ -52,37 +84,33 @@ letter-spacing: 0.03em;
 color: $white-text;
 text-align: center;
 justify-content: center;
-padding-top: 118px;
+padding-top: 118px;    
+    }
 }
 
 .card-description {
+    @media screen and (min-width: 480px) {
     padding-left: 24px;
-    padding-top: 20px;
+    padding-top: 20px;    
+    }
 }
 
 .card-description__title {
-    width: 322px;
-        height: 36px;
-        left: 639px;
-        top: 576px;
-        font-weight: 700;
+    @media screen and (min-width: 480px) {
         font-size: 18px;
         line-height: 2;
         letter-spacing: 0.06em;
         color: $main-text;
-        margin-bottom: 20px;
+        margin-bottom: 20px;    
+    }
 }
 
 .card-description__paragraph {
-    width: 322px;
-        height: 30px;
-        left: 639px;
-        top: 616px;
-        font-family: 'Roboto';
-        font-style: normal;
+    @media screen and (min-width: 480px) {
         font-weight: 400;
         font-size: 16px;
         line-height: 1.9px;
         letter-spacing: 0.03em;
-        color: #757575;
+        color: #757575;    
+    }
 }

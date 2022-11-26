@@ -1,7 +1,6 @@
 .hero-section {
-    height: 600px;
     padding-top: 200px;  
-
+    max-width: 1600px;
     @media screen and (min-width: 480px) {
         background-image: linear-gradient(
         to right,
@@ -13,19 +12,16 @@
     padding: 118px 60px 118px 60px;
     }  
 
-    // @media screen and (min-width: 768px) {
-        
-    // }  
+    @media screen and (min-width: 768px) {
+        padding: 118px 204px 118px 204px;
+    }  
 
     @media screen and (min-width: 1200px) {
         padding-top: 200px;
-        padding-bottom: 200px;
     }  
 }
 
 .hero-section__title {
-        font-weight: 900;
-        color: $white-text;
 
         @media screen and (min-width: 480px) {
 font-size: 26px;
@@ -34,6 +30,8 @@ text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 margin-bottom: 30px;
+font-weight: 900;
+        color: $white-text;
     }    
 
      @media screen and (min-width: 1200px) {
@@ -46,19 +44,24 @@ margin-bottom: 30px;
 }
 
 .hero-section__btn {
-    font-size: 16px;
+    @media screen and (min-width: 480px) {
+        padding: 10px 24px 10px 24px;
+        font-size: 16px;
     line-height: 1.9;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     color: $white-text;
-    width: 200px;
-    height: 50px;   
-    display: block;
+     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
     background: $accent;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    }    
+
+    @media screen and (min-width: 1200px) {
+   padding: 10px 32px 10px 32px;
+    }  
 }

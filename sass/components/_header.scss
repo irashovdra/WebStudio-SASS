@@ -5,25 +5,68 @@
 
 /* Список посилань */
 
+.header__btn {
+    display: block;
+    height: 40px; 
+    margin-left: auto;
+    border: none;
+    background-color: transparent;
+  
+    @media screen and (min-width: 768px) {
+        display: none;
+    }  
+}
+
 .links-list {
     @extend %list;
-    margin-left: 93px;
+
+    @media screen and (min-width: 480px) {
+display: none;
+    }   
+    
+    @media screen and (min-width: 768px) {
+        margin-left: 88px;
+        display: flex;
+        align-items: center;
+    }  
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 93px;
+    }  
 }
 
 .links-list__link {
-    color: $main-text;
+
+//      @media screen and (min-width: 480px) {
+// display: none;
+//     }
+    
+    @media screen and (min-width: 768px) {
+        display: block;
+        color: $main-text;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
-    margin-right: 54px;
+    margin-right: 51px;
     transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
     position: relative;
-    padding-bottom: 31px;
+    }  
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 54px;
+        padding-bottom: 25px;
+    } 
 }
 
 .links-list__item:last-child {
-    margin-right: 0;
+     @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    }  
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 0;
+    } 
 }
 
 .links-list__link:hover {
@@ -45,13 +88,33 @@
 /* Список контактів */
 
 .contacts-list {
-    @extend %list;
-    margin-left: auto;
+
+    @media screen and (min-width: 480px) {
+display: none;
+    }
+    
+    @media screen and (min-width: 768px) {
+        display: block;
+        margin-left: auto;
+        list-style: none;
+    } 
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    } 
 }
 
 .contacts-list__item {
-    margin-right: 50px;
-    transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 10px;
+        transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0px;
+        margin-right: 50px;
+    } 
 }
 
 .contacts-list__item:last-child {

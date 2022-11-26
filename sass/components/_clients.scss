@@ -1,42 +1,94 @@
 .clients-section {
-    padding-bottom: 94px;
+    @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+     padding-bottom: 94px;
     padding-top: 94px;
+    }  
 }
 
 .clients-section__title {
+    @media screen and (min-width: 480px) {
     font-weight: 700;
-font-size: 36px;
+font-size: 28px;
 line-height: 1.6;
 text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
-margin-bottom: 50px;
+margin-bottom: 30px;
+    } 
+
+    @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    }
 }
 
 .clients-list {
-    @extend %list;
+    @media screen and (min-width: 480px) {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    }
 }
 
-.clients-list__item {
-    margin-right: 30px;
-}
+// .clients-list__item {
+//     &:nth-child(2n) {
+//         margin-left: 30px;
+//     }
+//     @media screen and (min-width: 768px) {
+//     margin-bottom: 30px;
+//     margin-right: 30px;
+//     &:nth-child(3n) {
+//         margin-right: 0;
+//     }
+//     &:nth-child(2n) {
+//         margin-left: 0px;
+//     }
+//     }
 
-.clients-list__item:last-child {
-    margin-right: 0;
-}
+//     @media screen and (min-width: 1200px) {
+//     margin-bottom: 0px;
+//     &:nth-child(3n) {
+//         margin-right: 30px;
+//     }
+//     &:last-child {
+//         margin-right: 0px;
+//     }
+//     }
+// }
 
 .clients-list__link {
-    width: 170px;
-    height: 90px;
+    @media screen and (min-width: 480px) {
+    width: 210px;
+    height: 92px;
     display: flex;
-    @include center();
+    align-items: center;
+justify-content: center;
     fill: #AFB1B8;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     transition: fill 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms, border-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
+    }
+
+      @media screen and (min-width: 768px) {
+    width: 170px;
+    height: 90px;    
+    }  
+
+    @media screen and (min-width: 1200px) {
+    
+    }
 }
 
 .clients-list__link:hover {
+    @media screen and (min-width: 480px) {
     fill: $accent;
     border-color: #2196F3;
+    }
 }

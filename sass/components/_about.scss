@@ -1,23 +1,59 @@
 .about-list {
-    @extend %list;
-    padding-top: 94px;
-    padding-bottom: 94px;
+
+    @media screen and (min-width: 480px) {
+        // width: $mobile;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    list-style: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        // width: $tablet;
+        display: flex;
+         flex-wrap: wrap;
+        justify-content: center;
+    }  
+
+    @media screen and (min-width: 1200px) {
+        // width: $desktop;
+    margin-top: 94px;
+    margin-bottom: 94px;
+    }  
 }
 
 .about-list__item {
-    width: 270px;
+
+    @media screen and (min-width: 480px) {
+    width: 450px;
+    margin-bottom: 30px;
+    }
+
+      @media screen and (min-width: 768px) {
+        width: 270px;
     margin-right: 30px;
+    }  
+
+    // @media screen and (min-width: 1200px) {
+    
+    // }  
 }
 
 .about-list__item:last-child {
+    @media screen and (min-width: 480px) {
+    margin-bottom: 0;
+    }
+
+      @media screen and (min-width: 768px) {
     margin-right: 0;
+    }  
 }
 
 .about-list__item::before {
+    @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 120px;
     display: block;
-    width: 270px;
-height: 120px;
-background: $background-color;
+    background: $background-color;
 border-radius: 4px;
 display: flex;
 @include center();
@@ -25,38 +61,58 @@ background-size: 70px;
 content: "";
 background-repeat: no-repeat;
 background-position: center;
+    }
+
+      @media screen and (min-width: 768px) {
+    width: 270px;
+    }  
+
+    // @media screen and (min-width: 1200px) {
+
+    // }  
 }
 
 .about-list__item:nth-child(1)::before {
-  background-image: url(../images\(studio\)/abouticon1.png);
-}
+    background-image: url(../images\(studio\)/abouticon1.png);
+    }
+    
 
 .about-list__item:nth-child(2)::before {
-          background-image: url(../images\(studio\)/abouticon2.png);
+    @media screen and (min-width: 480px) {
+    background-image: url(../images\(studio\)/abouticon2.png);
+    }
 }
 
 .about-list__item:nth-child(3)::before {
+    @media screen and (min-width: 480px) {
     background-image: url(../images\(studio\)/abouticon3.png);
+    }
 }
 
 .about-list__item:nth-child(4)::before {
+    @media screen and (min-width: 480px) {
     background-image: url(../images\(studio\)/abouticon4.png);
+    }
 }
 
 .about-list__name {
+    @media screen and (min-width: 480px) {
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $main-text;
-    padding-top: 30px;
+    margin-top: 30px;
     margin-bottom: 10px;
+    }
 }
 
 .about-list__description {
-    font-weight: 400;
+    @media screen and (min-width: 480px) {
+       font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: #757575;
+    }
 }

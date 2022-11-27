@@ -22,15 +22,10 @@
 
     <header>
       <div class="container">
-        <nav>
           <a href="/" class="logo"
             >Web<span class="logo--header">Studio</span></a
           >
-          <button type="button" class="header__btn">
-            <svg width="40" height="40">
-              <use href="./images(studio)/symbol-defs.svg#menu"></use>
-            </svg>
-          </button>
+          <nav data-menu>
           <ul class="links-list">
             <li class="links-list__item">
               <a
@@ -65,6 +60,12 @@
             </li>
           </ul>
         </nav>
+        <button data-menu-button type="button" class="header__btn">
+            <svg width="40" height="40">
+              <use class="header__icon-menu" href="./images(studio)/symbol-defs.svg#menu"></use>
+              <use class="header__icon-cross" href="./images(studio)/symbol-defs.svg#cross"></use>
+            </svg>
+          </button>
       </div>
     </header>
     <!-- Мейн -->
@@ -571,5 +572,6 @@
         console.log("Це клік в бекдроп");
       }
     </script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

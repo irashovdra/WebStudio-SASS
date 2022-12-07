@@ -52,6 +52,7 @@ nav {
   footer {
     padding-left: 215px;
     height: 252px;
+    flex-wrap: nowrap;
   }
 }
 

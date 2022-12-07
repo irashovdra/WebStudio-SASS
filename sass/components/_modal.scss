@@ -20,6 +20,10 @@ padding: 40px;
     }
 }
 
+.modal__list {
+    list-style: none;
+}
+
 .modal__dagger {
     @media screen and (min-width: 480px) {
     position: absolute;

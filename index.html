@@ -22,10 +22,8 @@
 
     <header class="header">
       <div class="container">
-          <a href="/" class="logo"
-            >Web<span class="logo--header">Studio</span></a
-          >
-          <nav>
+        <a href="/" class="logo">Web<span class="logo--header">Studio</span></a>
+        <nav>
           <ul class="links-list">
             <li class="links-list__item">
               <a
@@ -61,17 +59,19 @@
           </ul>
         </nav>
 
-
-
         <div class="mobile-modal" data-menu>
           <ul class="modal__links-list">
             <li class="modal__links-list__item">
-              <a class="modal__links-list__link links-link--active-page"
+              <a
+                class="modal__links-list__link links-link--active-page"
                 href="./index.html"
-                >Студія</a>
+                >Студія</a
+              >
             </li>
             <li class="modal__links-list__item">
-              <a class="modal__links-list__link" href="./portfolio.html">Портфоліо</a>
+              <a class="modal__links-list__link" href="./portfolio.html"
+                >Портфоліо</a
+              >
             </li>
             <li class="modal__links-list__item">
               <a class="modal__links-list__link" href="/contacts">Контакти</a>
@@ -79,7 +79,9 @@
           </ul>
           <ul class="modal__contacts-list">
             <li class="modal__contacts-list__item">
-              <a class="modal__contacts-list__link" href="mailto:info@devstudio.com"
+              <a
+                class="modal__contacts-list__link"
+                href="mailto:info@devstudio.com"
                 ><svg class="modal__contacts-list__icon" width="16" height="12">
                   <use href="./images(studio)/symbol-defs.svg#email"></use>
                 </svg>
@@ -97,32 +99,35 @@
           </ul>
           <ul class="social-medias">
             <li class="social-medias__item">
-              <a href="https://www.instagram.com/">
+              <a href="https://www.instagram.com/"> </a>
+            </li>
+            <li class="social-medias__item">
+              <a href="https://twitter.com/?lang=uk"> </a>
+            </li>
+            <li class="social-medias__item">
+              <a
+                href="https://www.facebook.com/legal_consent/?consent_mode=5&entry_product=cg_block&from_messenger=0&d=AcXO3EizMTrzidpX2iwysdOJNLmTWD3061e2Bp2aEvahUTHKVxC-UUzoF00Uf2FNBToucNcOESL3%3Ace6db54721b63b75663ed4da2c71b49e"
+              >
               </a>
             </li>
             <li class="social-medias__item">
-              <a href="https://twitter.com/?lang=uk">
-              </a>
-            </li>
-            <li class="social-medias__item">
-              <a href="https://www.facebook.com/legal_consent/?consent_mode=5&entry_product=cg_block&from_messenger=0&d=AcXO3EizMTrzidpX2iwysdOJNLmTWD3061e2Bp2aEvahUTHKVxC-UUzoF00Uf2FNBToucNcOESL3%3Ace6db54721b63b75663ed4da2c71b49e">
-              </a>
-            </li>
-            <li class="social-medias__item">
-              <a href="https://www.linkedin.com/">
-              </a>
+              <a href="https://www.linkedin.com/"> </a>
             </li>
           </ul>
         </div>
 
-
-
         <button data-menu-button type="button" class="header__btn">
-            <svg width="40" height="40">
-              <use class="header__icon-menu" href="./images(studio)/symbol-defs.svg#menu"></use>
-              <use class="header__icon-cross" href="./images(studio)/symbol-defs.svg#cross"></use>
-            </svg>
-          </button>
+          <svg width="40" height="40">
+            <use
+              class="header__icon-menu"
+              href="./images(studio)/symbol-defs.svg#menu"
+            ></use>
+            <use
+              class="header__icon-cross"
+              href="./images(studio)/symbol-defs.svg#cross"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- Мейн -->
@@ -252,6 +257,10 @@
             <li class="work-list__item">
               <div class="work-list__item-hover">
                 <img
+                  srcset="
+                    images(studio)/desktop/1x/photo1-desktop@1x.jpg 1x,
+                    images(studio)/desktop/2x/photo1-desktop@2x.png 2x
+                  "
                   class="work-list__photo"
                   src="./images(studio)/photo1.jpg"
                   alt="photo1"
@@ -261,6 +270,10 @@
             </li>
             <li class="work-list__item">
               <img
+                srcset="
+                  images(studio)/desktop/1x/photo2-desktop@1x.jpg 1x,
+                  images(studio)/desktop/2x/photo2-desktop@2x.png 2x
+                "
                 class="work-list__photo"
                 src="./images(studio)/photo2.jpg"
                 alt="photo2"
@@ -269,6 +282,10 @@
             </li>
             <li class="work-list__item">
               <img
+                srcset="
+                  images(studio)/desktop/1x/photo3-desktop@1x.jpg 1x,
+                  images(studio)/desktop/2x/photo3-desktop@2x.png 2x
+                "
                 class="work-list__photo"
                 src="./images(studio)/photo3.jpg"
                 alt="photo3"
@@ -286,11 +303,29 @@
           <h2 class="team-section__title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-list__card">
-              <img
-                class="team-list__photo"
-                src="./images(studio)/team1.jpg"
-                alt="team1"
-              />
+              <picture>
+                <source
+                  srcset="
+                    images(studio)/mobile/1x/team1-mobile@1x.jpg 1x,
+                    images(studio)/mobile/2x/team1-mobile@2x.jpg 2x
+                  "
+                />
+                <source
+                  srcset="
+                    images(studio)/tablet/1x/team1-tablet@1x.jpg 1x,
+                    images(studio)/tablet/2x/team1-tablet@2x.jpg 2x
+                  "
+                />
+                <img
+                  srcset="
+                    images(studio)/desktop/1x/team1-desktop@1x.jpg 1x,
+                    images(studio)/desktop/2x/team1-desktop@2x.jpg 2x
+                  "
+                  class="team-list__photo"
+                  src="./images(studio)/team1.jpg"
+                  alt="team1"
+                />
+              </picture>
               <h3 class="team-list__card-title">Ігор Дем'яненко</h3>
               <p class="team-list__card-paragraph">Product Designer</p>
               <ul class="social-list">
@@ -333,11 +368,24 @@
               </ul>
             </li>
             <li class="team-list__card">
-              <img
-                class="team-list__photo"
-                src="./images(studio)/team2.jpg"
-                alt="team2"
-              />
+              <picture>
+                <source srcset="images(studio)/mobile/1x/team2-mobile@1x.jpg 1x, images(studio)/mobile/2x/team2-mobile@2x.jpg 2x">
+                <source
+                  srcset="
+                    images(studio)/tablet/1x/team2-tablet@1x.jpg 1x,
+                    images(studio)/tablet/2x/team2-tablet@2x.jpg 2x
+                  "
+                />
+                <img
+                  srcset="
+                    images(studio)/desktop/1x/team2-desktop@1x.jpg 1x,
+                    images(studio)/desktop/2x/team2-desktop@2x.jpg 2x
+                  "
+                  class="team-list__photo"
+                  src="./images(studio)/team2.jpg"
+                  alt="team2"
+                />
+              </picture>
               <h3 class="team-list__card-title">Ольга Репіна</h3>
               <p class="team-list__card-paragraph">Frontend Developer</p>
               <ul class="social-list">
@@ -380,11 +428,15 @@
               </ul>
             </li>
             <li class="team-list__card">
-              <img
+              <picture>
+                <source srcset="images(studio)/mobile/1x/team3-mobile@1x.jpg 1x, images(studio)/mobile/2x/team3-mobile@2x.jpg 2x">
+                <source srcset="images(studio)/tablet/1x/team3-tablet@1x.jpg 1x, images(studio)/tablet/2x/team3-tablet@2x.jpg 2x">
+              <img srcset="images(studio)/desktop/1x/team3-desktop@1x.jpg 1x, images(studio)/desktop/2x/team3-desktop@2x.jpg 2x" 
                 class="team-list__photo"
                 src="./images(studio)/team3.jpg"
                 alt="team3"
               />
+              </picture>
               <h3 class="team-list__card-title">Микола Тарасов</h3>
               <p class="team-list__card-paragraph">Marketing</p>
               <ul class="social-list">
@@ -427,11 +479,15 @@
               </ul>
             </li>
             <li class="team-list__card">
-              <img
+              <picture>
+                <source srcset="images(studio)/mobile/1x/team4-mobile@1x.jpg 1x, images(studio)/mobile/2x/team4-mobile@2x.jpg 2x">
+                <source srcset="images(studio)/tablet/1x/team4-tablet@1x.jpg 1x, images(studio)/tablet/2x/team4-tablet@2x.jpg 2x">
+              <img srcset="images(studio)/desktop/1x/team4-desktop@1x.jpg 1x, images(studio)/desktop/2x/team4-desktop@2x.jpg 2x"
                 class="team-list__photo"
                 src="./images(studio)/team4.jpg"
                 alt="team4"
               />
+              </picture>
               <h3 class="team-list__card-title">Михайло Єрмаков</h3>
               <p class="team-list__card-paragraph">Ul Designer</p>
               <ul class="social-list">

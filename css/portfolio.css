@@ -77,13 +77,16 @@ nav {
 ul {
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 
 a {
   text-decoration: none;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0;
   padding: 0;
 }
@@ -112,30 +115,32 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   nav {
     display: none;
   }
 }
 @media screen and (min-width: 768px) {
   nav {
-    display: block;
+    display: flex;
   }
+}
+
+.header .container {
+  display: flex;
 }
 
 .logo--header {
   color: #000000;
 }
 
-@media screen and (min-width: 480px) {
-  .header__btn {
-    display: block;
-    height: 40px;
-    margin-left: auto;
-    border: none;
-    background-color: transparent;
-    align-items: center;
-  }
+.header__btn {
+  display: block;
+  height: 40px;
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+  align-items: center;
 }
 @media screen and (min-width: 768px) {
   .header__btn {
@@ -155,12 +160,15 @@ img {
   display: none;
 }
 
+.links-list {
+  display: none;
+  margin-left: 88px;
+  align-items: center;
+  list-style: none;
+}
 @media screen and (min-width: 768px) {
   .links-list {
-    margin-left: 88px;
     display: flex;
-    align-items: center;
-    list-style: none;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -200,19 +208,19 @@ img {
 }
 
 .links-link--active-page::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  display: block;
-  border-radius: 4px;
-  height: 4px;
-  background-color: #2196F3;
-  width: 100%;
+  display: none;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .links-link--active-page::after {
-    display: none;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    border-radius: 4px;
+    height: 4px;
+    background-color: #2196F3;
+    width: 100%;
   }
 }
 

@@ -1,4 +1,27 @@
 .hero-section {
+
+    background-image: url(../../images\(studio\)/background-mobile@1x.png);
+
+    @media screen and (min-resolution: 2dppx) {
+        background-image: url(../../images\(studio\)/background-mobile@2x.png);
+    }
+
+    @media screen and (min-width: 768px) {
+        background-image: url(../../images\(studio\)/background-tablet@1x.png);
+
+        @media screen and (min-resolution: 2dppx) {
+        background-image: url(../../images\(studio\)/background-tablet@2x.png);
+    }
+
+    @media screen and (min-width: 1200px) {
+        background-image: url(../../images\(studio\)/background-desktop@1x.png);
+
+        @media screen and (min-resolution: 2dppx), (min-resolution: 192dppi), (min-device-pixel-ratio: 2) {
+        background-image: url(../../images\(studio\)/background-desktop@2x.png);
+    }
+    }
+    }
+
     padding-top: 200px;  
     max-width: 1600px;
     @media screen and (min-width: 480px) {
@@ -6,9 +29,9 @@
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
-    ),
-    url(../images\(studio\)/background.png);
-    background-repeat: no-repeat;
+    );
+    // url(../images\(studio\)/background.png);
+    // background-repeat: no-repeat;
     padding: 118px 60px 118px 60px;
     }  
 

@@ -8,13 +8,19 @@
 }
 
 nav {
-  @media screen and (min-width: 480px) {
+  // display: none;
+
+  @media screen and (max-width: 767px) {
     display: none;
   }
 
   @media screen and (min-width: 768px) {
-    display: block;
+    display: flex;
   }
+}
+
+.header .container {
+  display: flex;
 }
 
 .logo--header {
@@ -22,14 +28,12 @@ nav {
 }
 
 .header__btn {
-  @media screen and (min-width: 480px) {
   display: block;
   height: 40px;
   margin-left: auto;
   border: none;
   background-color: transparent;
   align-items: center;
-  }
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -49,11 +53,13 @@ nav {
 }
 
 .links-list {
+  display: none;
+  margin-left: 88px;
+  align-items: center;
+  list-style: none;
+
   @media screen and (min-width: 768px) {
-    margin-left: 88px;
     display: flex;
-    align-items: center;
-    list-style: none;
   }
 
   @media screen and (min-width: 1200px) {
@@ -62,7 +68,6 @@ nav {
 }
 
 .links-list__link {
-
   @media screen and (min-width: 768px) {
     margin-right: 51px;
     font-size: 14px;
@@ -92,10 +97,10 @@ nav {
 }
 
 .links-link--active-page::after {
-  @media screen and (min-width: 480px) {
-    display: none;
-  }
-  content: "";
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -104,12 +109,12 @@ nav {
   height: 4px;
   background-color: $accent;
   width: 100%;
+  }
 }
 
 /* Список контактів */
 
 .contacts-list {
-
   @media screen and (min-width: 768px) {
     display: block;
     margin-left: auto;
@@ -139,7 +144,6 @@ nav {
 }
 
 .contacts-list__link {
-
   @media screen and (min-width: 768px) {
     display: flex;
     font-size: 14px;

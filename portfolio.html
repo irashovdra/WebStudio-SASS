@@ -13,14 +13,17 @@
     <link rel="stylesheet" href="./css/portfolio.min.css">
 </head>
 <body>
-   <header>
+   <header class="header">
       <div class="container">
+        <a href="/" class="logo">Web<span class="logo--header">Studio</span></a>
         <nav>
-          <a href="/" class="logo">Web<span class="logo--header">Studio</span></a>
-
           <ul class="links-list">
             <li class="links-list__item">
-              <a class="links-list__link links-link--active-page" href="./index.html">Студія</a>
+              <a
+                class="links-list__link links-link--active-page"
+                href="./index.html"
+                >Студія</a
+              >
             </li>
             <li class="links-list__item">
               <a class="links-list__link" href="./portfolio.html">Портфоліо</a>
@@ -43,10 +46,81 @@
                 <svg class="contacts-list__icon" width="10" height="16">
                   <use href="./images(studio)/symbol-defs.svg#smartphone"></use>
                 </svg>
-                <span>+38 096 111 11 11</span></a>
+                <span>+38 096 111 11 11</span></a
+              >
             </li>
           </ul>
         </nav>
+
+        <div class="mobile-modal" data-menu>
+          <ul class="modal__links-list">
+            <li class="modal__links-list__item">
+              <a
+                class="modal__links-list__link links-link--active-page"
+                href="./index.html"
+                >Студія</a
+              >
+            </li>
+            <li class="modal__links-list__item">
+              <a class="modal__links-list__link" href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="modal__links-list__item">
+              <a class="modal__links-list__link" href="/contacts">Контакти</a>
+            </li>
+          </ul>
+          <ul class="modal__contacts-list">
+            <li class="modal__contacts-list__item">
+              <a
+                class="modal__contacts-list__link"
+                href="mailto:info@devstudio.com"
+                ><svg class="modal__contacts-list__icon" width="16" height="12">
+                  <use href="./images(studio)/symbol-defs.svg#email"></use>
+                </svg>
+                <span>info@devstudio.com</span></a
+              >
+            </li>
+            <li class="modal__contacts-list__item">
+              <a class="modal__contacts-list__link" href="tel:+380961111111">
+                <svg class="modal__contacts-list__icon" width="10" height="16">
+                  <use href="./images(studio)/symbol-defs.svg#smartphone"></use>
+                </svg>
+                <span>+38 096 111 11 11</span></a
+              >
+            </li>
+          </ul>
+          <ul class="social-medias">
+            <li class="social-medias__item">
+              <a href="https://www.instagram.com/"> </a>
+            </li>
+            <li class="social-medias__item">
+              <a href="https://twitter.com/?lang=uk"> </a>
+            </li>
+            <li class="social-medias__item">
+              <a
+                href="https://www.facebook.com/legal_consent/?consent_mode=5&entry_product=cg_block&from_messenger=0&d=AcXO3EizMTrzidpX2iwysdOJNLmTWD3061e2Bp2aEvahUTHKVxC-UUzoF00Uf2FNBToucNcOESL3%3Ace6db54721b63b75663ed4da2c71b49e"
+              >
+              </a>
+            </li>
+            <li class="social-medias__item">
+              <a href="https://www.linkedin.com/"> </a>
+            </li>
+          </ul>
+        </div>
+
+        <button data-menu-button type="button" class="header__btn">
+          <svg width="40" height="40">
+            <use
+              class="header__icon-menu"
+              href="./images(studio)/symbol-defs.svg#menu"
+            ></use>
+            <use
+              class="header__icon-cross"
+              href="./images(studio)/symbol-defs.svg#cross"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- Мейн -->
@@ -233,5 +307,6 @@
         </div>
       </section>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

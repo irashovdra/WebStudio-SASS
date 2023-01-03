@@ -67,9 +67,6 @@ background-position: center;
     width: 270px;
     }  
 
-    // @media screen and (min-width: 1200px) {
-
-    // }  
 }
 
 .about-list__item:nth-child(1)::before {
@@ -78,21 +75,15 @@ background-position: center;
     
 
 .about-list__item:nth-child(2)::before {
-    @media screen and (min-width: 480px) {
     background-image: url(../../images\(studio\)/abouticon2.png);
-    }
 }
 
 .about-list__item:nth-child(3)::before {
-    @media screen and (min-width: 480px) {
     background-image: url(../../images\(studio\)/abouticon3.png);
-    }
 }
 
 .about-list__item:nth-child(4)::before {
-    @media screen and (min-width: 480px) {
     background-image: url(../../images\(studio\)/abouticon4.png);
-    }
 }
 
 .about-list__name {

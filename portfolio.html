@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./css/portfolio.min.css">
-</head>
-<body>
-   <header class="header">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
+  </head>
+  <body>
+    <header class="header">
       <div class="container">
         <a href="/" class="logo">Web<span class="logo--header">Studio</span></a>
         <nav>
@@ -125,127 +130,393 @@
     </header>
     <!-- Мейн -->
     <main>
-        <!-- Кнопки -->
-        <section>
-            <div class="container">
-        <ul class="btn-list">
-            <li class="btn-list__item"><button class="btn-list__button">Усе</button></li>
-            <li class="btn-list__item"><button class="btn-list__button">Веб-сайти</button></li>
-            <li class="btn-list__item"><button class="btn-list__button">Застосунки</button></li>
-            <li class="btn-list__item"><button class="btn-list__button">Дизайн</button></li>
-            <li class="btn-list__item"><button class="btn-list__button">Маркетинг</button></li>
-        </ul>
-            </div>
-        </section>
-        <!-- Карточки -->
-        <section>
-            <div class="container">
-        <ul class="card-list">
+      <!-- Кнопки -->
+      <section>
+        <div class="container">
+          <ul class="btn-list">
+            <li class="btn-list__item">
+              <button class="btn-list__button">Усе</button>
+            </li>
+            <li class="btn-list__item">
+              <button class="btn-list__button">Веб-сайти</button>
+            </li>
+            <li class="btn-list__item">
+              <button class="btn-list__button">Застосунки</button>
+            </li>
+            <li class="btn-list__item">
+              <button class="btn-list__button">Дизайн</button>
+            </li>
+            <li class="btn-list__item">
+              <button class="btn-list__button">Маркетинг</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Карточки -->
+      <section>
+        <div class="container">
+          <ul class="card-list">
             <li class="card-list__item">
-                <img src="./images(portfolio)/img1.jpg" alt="photo" class="card-list__photo">
-                <div class="card-overlay">
-                    <p class="card-overlay__paragraph">Технокрик це сучасний майданчик поширення коронавірусу. 
-Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.</p>
-                </div>
-                <div class="card-description">
+              <picture>
+                <source
+                  srcset="
+                    images(portfolio)/images(mobile)/1x/img1-mobile@1x.png 1x,
+                    images(portfolio)/images(mobile)/2x/img1-mobile@2x.png 2x
+                  "
+                  media="(max-width: 480px)"
+                />
+                <source
+                  srcset="
+                    images(portfolio)/images(tablet)/1x/img1-tablet@1x.png 1x,
+                    images(portfolio)/images(tablet)/2x/img1-tablet@2x.png 2x
+                  "
+                  media="(max-width: 768px)"
+                />
+                <img
+                  src="./images(portfolio)/img1.jpg"
+                  alt="photo"
+                  class="card-list__photo"
+                  srcset="
+                    images(portfolio)/images(desktop)/images(1x)/img1-desktop@1x.jpg 1x,
+                    images(portfolio)/images(desktop)/images(2x)/img1-desktop@2x.png 2x
+                  "
+                  media="(max-width: 1200px)"
+                />
+              </picture>
+              <div class="card-overlay">
+                <p class="card-overlay__paragraph">
+                  Технокрик це сучасний майданчик поширення коронавірусу.
+                  Компанії використовують цю платформу для цифрового шпигунства
+                  та атак на захищені сервери конкурентів.
+                </p>
+              </div>
+              <div class="card-description">
                 <h2 class="card-description__title">Технокряк</h2>
                 <p class="card-description__paragraph">Веб-сайт</p>
-                </div>
+              </div>
             </li>
             <li class="card-list__item">
-                <img src="./images(portfolio)/img2.jpg" alt="photo" class="card-list__photo">
-                <div class="card-overlay">
-                    <p class="card-overlay__paragraph">Технокрик це сучасний майданчик поширення коронавірусу. 
-Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.</p>
-                </div>
-                <div class="card-description">
-            <h2 class="card-description__title">Постер New Orlean vs Golden Star</h2>
-            <p class="card-description__paragraph">Дизайн</p>
-                </div>
+              <picture>
+              <source
+                  srcset="
+                    images(portfolio)/images(mobile)/1x/img2-mobile@1x.png 1x,
+                    images(portfolio)/images(mobile)/2x/img1-mobile@2x.png 2x
+                  "
+                  media="(max-width: 480px)"
+                >
+                <source
+                  srcset="
+                    images(portfolio)/images(tablet)/1x/img2-tablet@1x.png 1x,
+                    images(portfolio)/images(tablet)/2x/img2-tablet@2x.png 2x
+                  "
+                  media="(max-width: 768px)"
+                >  
+              <img
+                src="./images(portfolio)/img2.jpg"
+                alt="photo"
+                class="card-list__photo" 
+                srcset="
+                    images(portfolio)/images(desktop)/images(1x)/img2-desktop@1x.jpg 1x,
+                    images(portfolio)/images(desktop)/images(2x)/img2-desktop@2x.png 2x
+                  "
+                  media="(max-width: 1200px)"
+              />
+              </picture>
+              <div class="card-overlay">
+                <p class="card-overlay__paragraph">
+                  Технокрик це сучасний майданчик поширення коронавірусу.
+                  Компанії використовують цю платформу для цифрового шпигунства
+                  та атак на захищені сервери конкурентів.
+                </p>
+              </div>
+              <div class="card-description">
+                <h2 class="card-description__title">
+                  Постер New Orlean vs Golden Star
+                </h2>
+                <p class="card-description__paragraph">Дизайн</p>
+              </div>
             </li>
             <li class="card-list__item">
-                <img src="./images(portfolio)/img3.jpg" alt="photo" class="card-list__photo">
-                <div class="card-overlay">
-                    <p class="card-overlay__paragraph">Технокрик це сучасний майданчик поширення коронавірусу. 
-Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.</p>
-                </div>
-                <div class="card-description">
-            <h2 class="card-description__title">Ресторан Seafood</h2>
-            <p class="card-description__paragraph">Застосунок</p>
-                </div>
+              <picture>
+              <source
+                  srcset="
+                    images(portfolio)/images(mobile)/1x/img3-mobile@1x.png 1x,
+                    images(portfolio)/images(mobile)/2x/img3-mobile@2x.png 2x
+                  "
+                  media="(max-width: 480px)"
+                >
+                <source
+                  srcset="
+                    images(portfolio)/images(tablet)/1x/img3-tablet@1x.png 1x,
+                    images(portfolio)/images(tablet)/2x/img3-tablet@2x.png 2x
+                  "
+                  media="(max-width: 768px)"
+                >
+              <img
+                src="./images(portfolio)/img3.jpg"
+                alt="photo"
+                class="card-list__photo"
+                srcset="
+                    images(portfolio)/images(desktop)/images(1x)/img3-desktop@1x.jpg 1x,
+                    images(portfolio)/images(desktop)/images(2x)/img3-desktop@2x.png 2x
+                  "
+                  media="(max-width: 1200px)"
+              />
+              </picture>
+              <div class="card-overlay">
+                <p class="card-overlay__paragraph">
+                  Технокрик це сучасний майданчик поширення коронавірусу.
+                  Компанії використовують цю платформу для цифрового шпигунства
+                  та атак на захищені сервери конкурентів.
+                </p>
+              </div>
+              <div class="card-description">
+                <h2 class="card-description__title">Ресторан Seafood</h2>
+                <p class="card-description__paragraph">Застосунок</p>
+              </div>
             </li>
             <li class="card-list__item">
-                <img src="./images(portfolio)/img4.jpg" alt="photo" class="card-list__photo">
-                <div class="card-overlay">
-                    <p class="card-overlay__paragraph">Технокрик це сучасний майданчик поширення коронавірусу. 
-Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.</p>
-                </div>
-                <div class="card-description">
+              <picture>
+              <source
+                  srcset="
+                    images(portfolio)/images(mobile)/1x/img4-mobile@1x.png 1x,
+                    images(portfolio)/images(mobile)/2x/img4-mobile@2x.png 2x
+                  "
+                  media="(max-width: 480px)"
+                >
+                <source
+                  srcset="
+                    images(portfolio)/images(tablet)/1x/img4-tablet@1x.png 1x,
+                    images(portfolio)/images(tablet)/2x/img4-tablet@2x.png 2x
+                  "
+                  media="(max-width: 768px)"
+                >
+              <img
+                src="./images(portfolio)/img4.jpg"
+                alt="photo"
+                class="card-list__photo"
+                srcset="
+                    images(portfolio)/images(desktop)/images(1x)/img4-desktop@1x.jpg 1x,
+                    images(portfolio)/images(desktop)/images(2x)/img4-desktop@2x.png 2x
+                  "
+                  media="(max-width: 1200px)"
+              />
+              </picture>
+              <div class="card-overlay">
+                <p class="card-overlay__paragraph">
+                  Технокрик це сучасний майданчик поширення коронавірусу.
+                  Компанії використовують цю платформу для цифрового шпигунства
+                  та атак на захищені сервери конкурентів.
+                </p>
+              </div>
+              <div class="card-description">
                 <h2 class="card-description__title">Проект Prime</h2>
                 <p class="card-description__paragraph">Маркетинг</p>
-                </div>
+              </div>
             </li>
             <li class="card-list__item">
-                <img src="./images(portfolio)/img5.jpg" alt="photo" class="card-list__photo">
-                <div class="card-overlay">
-                    <p class="card-overlay__paragraph">Технокрик це сучасний майданчик поширення коронавірусу. 
-Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.</p>
-                </div>
-                <div class="card-description">
-            <h2 class="card-description__title">Проект Boxes</h2>
-              
-            <p class="card-description__paragraph">Застосунок</p>
-                </div>
+              <picture>
+              <source
+                  srcset="
+                    images(portfolio)/images(mobile)/1x/img5-mobile@1x.png 1x,
+                    images(portfolio)/images(mobile)/2x/img5-mobile@2x.png 2x
+                  "
+                  media="(max-width: 480px)"
+                >
+                <source
+                  srcset="
+                    images(portfolio)/images(tablet)/1x/img5-tablet@1x.png 1x,
+                    images(portfolio)/images(tablet)/2x/img5-tablet@2x.png 2x
+                  "
+                  media="(max-width: 768px)"
+                >
+              <img
+                src="./images(portfolio)/img5.jpg"
+                alt="photo"
+                class="card-list__photo"
+                srcset="
+                    images(portfolio)/images(desktop)/images(1x)/img5-desktop@1x.jpg 1x,
+                    images(portfolio)/images(desktop)/images(2x)/img5-desktop@2x.png 2x
+                  "
+                  media="(max-width: 1200px)"
+              />
+              </picture>
+              <div class="card-overlay">
+                <p class="card-overlay__paragraph">
+                  Технокрик це сучасний майданчик поширення коронавірусу.
+                  Компанії використовують цю платформу для цифрового шпигунства
+                  та атак на захищені сервери конкурентів.
+                </p>
+              </div>
+              <div class="card-description">
+                <h2 class="card-description__title">Проект Boxes</h2>
+
+                <p class="card-description__paragraph">Застосунок</p>
+              </div>
             </li>
             <li class="card-list__item">
-                <img src="./images(portfolio)/img6.jpg" alt="photo" class="card-list__photo">
-                <div class="card-overlay">
-                    <p class="card-overlay__paragraph">Технокрик це сучасний майданчик поширення коронавірусу. 
-Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.</p>
-                </div>
-                <div class="card-description">
-            <h2 class="card-description__title">Inspiration has no Borders</h2>
-            <p class="card-description__paragraph">Веб-сайт</p>
-                </div>
+              <picture>
+              <source
+                  srcset="
+                    images(portfolio)/images(mobile)/1x/img6-mobile@1x.png 1x,
+                    images(portfolio)/images(mobile)/2x/img6-mobile@2x.png 2x
+                  "
+                  media="(max-width: 480px)"
+                >
+                <source
+                  srcset="
+                    images(portfolio)/images(tablet)/1x/img6-tablet@1x.png 1x,
+                    images(portfolio)/images(tablet)/2x/img6-tablet@2x.png 2x
+                  "
+                  media="(max-width: 768px)"
+                >
+              <img
+                src="./images(portfolio)/img6.jpg"
+                alt="photo"
+                class="card-list__photo"
+                srcset="
+                    images(portfolio)/images(desktop)/images(1x)/img6-desktop@1x.jpg 1x,
+                    images(portfolio)/images(desktop)/images(2x)/img6-desktop@2x.png 2x
+                  "
+                  media="(max-width: 1200px)"
+              />
+              </picture>
+              <div class="card-overlay">
+                <p class="card-overlay__paragraph">
+                  Технокрик це сучасний майданчик поширення коронавірусу.
+                  Компанії використовують цю платформу для цифрового шпигунства
+                  та атак на захищені сервери конкурентів.
+                </p>
+              </div>
+              <div class="card-description">
+                <h2 class="card-description__title">
+                  Inspiration has no Borders
+                </h2>
+                <p class="card-description__paragraph">Веб-сайт</p>
+              </div>
             </li>
             <li class="card-list__item">
-                <img src="./images(portfolio)/img7.jpg" alt="photo" class="card-list__photo">
-                <div class="card-overlay">
-                    <p class="card-overlay__paragraph">Технокрик це сучасний майданчик поширення коронавірусу. 
-Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.</p>
-                </div>
-                <div class="card-description">
-            <h2 class="card-description__title">Видавництво Limited Edition</h2>
-            <p class="card-description__paragraph">Дизайн</p>
-                </div>
+              <source
+                  srcset="
+                    images(portfolio)/images(mobile)/1x/img7-mobile@1x.png 1x,
+                    images(portfolio)/images(mobile)/2x/img7-mobile@2x.png 2x
+                  "
+                  media="(max-width: 480px)"
+                >
+                <source
+                  srcset="
+                    images(portfolio)/images(tablet)/1x/img7-tablet@1x.png 1x,
+                    images(portfolio)/images(tablet)/2x/img7-tablet@2x.png 2x
+                  "
+                  media="(max-width: 768px)"
+                >
+              <img
+                src="./images(portfolio)/img7.jpg"
+                alt="photo"
+                class="card-list__photo"
+                srcset="
+                    images(portfolio)/images(desktop)/images(1x)/img7-desktop@1x.jpg 1x,
+                    images(portfolio)/images(desktop)/images(2x)/img7-desktop@2x.png 2x
+                  "
+                  media="(max-width: 1200px)"
+              />
+              <div class="card-overlay">
+                <p class="card-overlay__paragraph">
+                  Технокрик це сучасний майданчик поширення коронавірусу.
+                  Компанії використовують цю платформу для цифрового шпигунства
+                  та атак на захищені сервери конкурентів.
+                </p>
+              </div>
+              <div class="card-description">
+                <h2 class="card-description__title">
+                  Видавництво Limited Edition
+                </h2>
+                <p class="card-description__paragraph">Дизайн</p>
+              </div>
             </li>
             <li class="card-list__item">
-                <img src="./images(portfolio)/img8.jpg" alt="photo" class="card-list__photo">
-                <div class="card-overlay">
-                    <p class="card-overlay__paragraph">Технокрик це сучасний майданчик поширення коронавірусу. 
-Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.</p>
-                </div>
-                <div class="card-description">
+              <picture>
+              <source
+                  srcset="
+                    images(portfolio)/images(mobile)/1x/img8-mobile@1x.png 1x,
+                    images(portfolio)/images(mobile)/2x/img8-mobile@2x.png 2x
+                  "
+                  media="(max-width: 480px)"
+                >
+                <source
+                  srcset="
+                    images(portfolio)/images(tablet)/1x/img8-tablet@1x.png 1x,
+                    images(portfolio)/images(tablet)/2x/img8-tablet@2x.png 2x
+                  "
+                  media="(max-width: 768px)"
+                >
+              <img
+                src="./images(portfolio)/img8.jpg"
+                alt="photo"
+                class="card-list__photo"
+                srcset="
+                    images(portfolio)/images(desktop)/images(1x)/img8-desktop@1x.jpg 1x,
+                    images(portfolio)/images(desktop)/images(2x)/img8-desktop@2x.png 2x
+                  "
+                  media="(max-width: 1200px)"
+              />
+              </picture>
+              <div class="card-overlay">
+                <p class="card-overlay__paragraph">
+                  Технокрик це сучасний майданчик поширення коронавірусу.
+                  Компанії використовують цю платформу для цифрового шпигунства
+                  та атак на захищені сервери конкурентів.
+                </p>
+              </div>
+              <div class="card-description">
                 <h2 class="card-description__title">Проект LAB</h2>
                 <p class="card-description__paragraph">Маркетинг</p>
-                </div>
+              </div>
             </li>
             <li class="card-list__item">
-                <img src="./images(portfolio)/img9.jpg" alt="photo" class="card-list__photo">
-                <div class="card-overlay">
-                    <p class="card-overlay__paragraph">Технокрик це сучасний майданчик поширення коронавірусу. 
-Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.</p>
-                </div>
-                <div class="card-description">
+              <picture>
+              <source
+                  srcset="
+                    images(portfolio)/images(mobile)/1x/img9-mobile@1x.png 1x,
+                    images(portfolio)/images(mobile)/2x/img9-mobile@2x.png 2x
+                  "
+                  media="(max-width: 480px)"
+                >
+                <source
+                  srcset="
+                    images(portfolio)/images(tablet)/1x/img9-tablet@1x.png 1x,
+                    images(portfolio)/images(tablet)/2x/img9-tablet@2x.png 2x
+                  "
+                  media="(max-width: 768px)"
+                >
+              <img
+                src="./images(portfolio)/img9.jpg"
+                alt="photo"
+                class="card-list__photo"
+                srcset="
+                    images(portfolio)/images(desktop)/images(1x)/img9-desktop@1x.jpg 1x,
+                    images(portfolio)/images(desktop)/images(2x)/img9-desktop@2x.png 2x
+                  "
+                  media="(max-width: 1200px)"
+              />
+              </picture>
+              <div class="card-overlay">
+                <p class="card-overlay__paragraph">
+                  Технокрик це сучасний майданчик поширення коронавірусу.
+                  Компанії використовують цю платформу для цифрового шпигунства
+                  та атак на захищені сервери конкурентів.
+                </p>
+              </div>
+              <div class="card-description">
                 <h2 class="card-description__title">Growing Business</h2>
                 <p class="card-description__paragraph">Застосунок</p>
-                </div>
+              </div>
             </li>
-        </ul>
-            </div>
-        </section>
+          </ul>
+        </div>
+      </section>
     </main>
-<footer>
+    <footer>
       <section class="info-section">
         <h2 class="logo">Web<span class="logo logo--footer">Studio</span></h2>
         <address class="place">м. Київ, пр-т Лесі Українки, 26</address>
@@ -256,7 +527,7 @@
         </ul>
       </section>
 
-<!-- Секція приєднуйтесь -->
+      <!-- Секція приєднуйтесь -->
 
       <section class="join-section">
         <h3 class="join-section__title">Приєднуйтесь</h3>
@@ -292,18 +563,21 @@
         </ul>
       </section>
 
-<!-- Секція підпису -->
+      <!-- Секція підпису -->
 
       <section class="subscribing-section">
         <h3 class="subscribing-section__title">Підпишіться на розсилку</h3>
-         <div class="subscribing-section__content">
-          <textarea class="subscribing-section__input" placeholder="E-mail"></textarea>
-        <button type="submit" class="subscribing-section__btn">Підписатись
-          <svg width="24" height="24">
-            <use href="./images(studio)/symbol-defs.svg#telegram">
-            </use>
-          </svg>
-        </button>
+        <div class="subscribing-section__content">
+          <textarea
+            class="subscribing-section__input"
+            placeholder="E-mail"
+          ></textarea>
+          <button type="submit" class="subscribing-section__btn">
+            Підписатись
+            <svg width="24" height="24">
+              <use href="./images(studio)/symbol-defs.svg#telegram"></use>
+            </svg>
+          </button>
         </div>
       </section>
     </footer>

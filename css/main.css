@@ -665,22 +665,16 @@ img {
   background-image: url(../../images\(studio\)/abouticon1.png);
 }
 
-@media screen and (min-width: 480px) {
-  .about-list__item:nth-child(2)::before {
-    background-image: url(../../images\(studio\)/abouticon2.png);
-  }
+.about-list__item:nth-child(2)::before {
+  background-image: url(../../images\(studio\)/abouticon2.png);
 }
 
-@media screen and (min-width: 480px) {
-  .about-list__item:nth-child(3)::before {
-    background-image: url(../../images\(studio\)/abouticon3.png);
-  }
+.about-list__item:nth-child(3)::before {
+  background-image: url(../../images\(studio\)/abouticon3.png);
 }
 
-@media screen and (min-width: 480px) {
-  .about-list__item:nth-child(4)::before {
-    background-image: url(../../images\(studio\)/abouticon4.png);
-  }
+.about-list__item:nth-child(4)::before {
+  background-image: url(../../images\(studio\)/abouticon4.png);
 }
 
 @media screen and (min-width: 480px) {

@@ -1,26 +1,23 @@
 .team-section {
-
-    @media screen and (min-width: 480px) {
     background-color: $background-color;
      padding-top: 60px;
      padding-left: 15px;
       background-color: $background-color;
-    }
+    padding-bottom: 60px; 
 
     @media screen and (min-width: 1200px) {
     padding-top: 94px;
+    padding-bottom: 94px;
     }  
 }
 
 .team-section__title {
-    @media screen and (min-width: 480px) {
     margin-bottom: 30px;
     font-size: 28px;
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
     color: $main-text;
-    }
 
     @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
@@ -32,9 +29,8 @@
 }
 
 .team-list {
-    @media screen and (min-width: 480px) {
+  gap: 30px;
     list-style: none;
-    }
 
       @media screen and (min-width: 768px) {
     display: flex; 
@@ -44,18 +40,14 @@
 }
 
 .team-list__card {
-    @media screen and (min-width: 480px) {
-    margin-bottom: 30px;
     background: $white-text;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
 width: 450px; 
 padding-bottom: 24px;
-    }
 
       @media screen and (min-width: 768px) {
         width: 270px;
-       margin-right: 30px;  
     }  
 
      @media screen and (min-width: 1200px) {
@@ -63,21 +55,9 @@ padding-bottom: 24px;
     }  
 }
 
-.team-list__card:last-child {
-    @media screen and (min-width: 480px) {
-    margin-bottom: 0;
-    }
-
-      @media screen and (min-width: 768px) {
-    margin-right: 0;   
-    }  
-}
-
 .team-list__photo {
-    @media screen and (min-width: 480px) {
     display: block;
     width: 450px;
-    }
 
       @media screen and (min-width: 768px) {
      width: 270px;    
@@ -85,7 +65,6 @@ padding-bottom: 24px;
   }
 
 .team-list__card-title {
-    @media screen and (min-width: 480px) {
   font-weight: 500;
 font-size: 16px;
 line-height: 1.2;
@@ -94,11 +73,9 @@ letter-spacing: 0.03em;
 color: $main-text;
 margin-bottom: 10px;  
 margin-top: 30px;
-    }
   }
 
 .team-list__card-paragraph {
-    @media screen and (min-width: 480px) {
     font-weight: 400;
 font-size: 16px;
 line-height: 1.2px;
@@ -106,5 +83,4 @@ text-align: center;
 letter-spacing: 0.03em;
 color: #757575;
 margin-bottom: 16px;
-    }
 }

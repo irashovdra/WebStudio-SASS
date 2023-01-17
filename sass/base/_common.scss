@@ -3,6 +3,7 @@
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
 
    @media screen and (min-width: 480px) {
     width: $mobile;
@@ -29,39 +30,29 @@ nav {
 }
 
 footer {
-    @media screen and (min-width: 480px) {
-    height: 603px;
     background: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
-    } 
+}
 
-    @media screen and (min-width: 768px) {
+footer .container {
     display: flex;
     flex-wrap: wrap;
-    height: 463px;
-    padding-left: 76px;
-    } 
+    justify-content: center;
 
-    @media screen and (min-width: 1200px) {
-    padding-left: 215px;
-    height: 252px;
-    flex-wrap: nowrap;
-    }
+    @media screen and (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+    } 
 }
 
 .logo {
-    @media screen and (min-width: 480px) {
     color: #2196F3;
     font-family: 'Raleway';
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-align: center;
-    display: flex;
-    // margin-bottom: 20px;  
-    align-items: center;
-    } 
 
     @media screen and (min-width: 1200px) {
     text-align: left;

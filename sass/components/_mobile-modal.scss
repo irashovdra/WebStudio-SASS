@@ -9,9 +9,20 @@
     padding-left: 40px;
     padding-top: 48px;
 
+
   @media screen and (min-width: 768px) {
     display: none;
   }
+}
+
+.mobile-center {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.modal-content {
+  margin-top: auto;
 }
 
 .mobile-modal.is-open {
@@ -20,10 +31,11 @@
 
 .modal__links-list {
     list-style: none;
-    margin-bottom: 302px;
+    margin-bottom: auto;
 }
 
 .modal__links-list__link {
+  position: relative;
     margin-bottom: 35px;
     font-size: 40px;
     color: $main-text;
@@ -31,8 +43,19 @@
     line-height: 1.1;
     letter-spacing: 0.02em;
     transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
-    position: relative;
     display: block;
+}
+
+.modal__links-list__link--active-page::after {
+    content: "";
+  position: absolute;
+  left: 0;
+  top: 44px;
+  display: block;
+  border-radius: 4px;
+  height: 4px;
+  background-color: $accent;
+  width: 100%;
 }
 
 .modal__links-list__item:last-child {

@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="./css/portfolio.min.css" />
   </head>
   <body>
+    <!-- Шапка  -->
+
     <header class="header">
       <div class="container">
         <a href="/" class="logo">Web<span class="logo--header">Studio</span></a>
@@ -37,25 +39,25 @@
               <a class="links-list__link" href="/contacts">Контакти</a>
             </li>
           </ul>
-          <ul class="contacts-list">
-            <li class="contacts-list__item">
-              <a class="contacts-list__link" href="mailto:info@devstudio.com"
-                ><svg class="contacts-list__icon" width="16" height="12">
-                  <use href="./images(studio)/symbol-defs.svg#email"></use>
-                </svg>
-                <span>info@devstudio.com</span></a
-              >
-            </li>
-            <li class="contacts-list__item">
-              <a class="contacts-list__link" href="tel:+380961111111">
-                <svg class="contacts-list__icon" width="10" height="16">
-                  <use href="./images(studio)/symbol-defs.svg#smartphone"></use>
-                </svg>
-                <span>+38 096 111 11 11</span></a
-              >
-            </li>
-          </ul>
         </nav>
+        <ul class="contacts-list">
+          <li class="contacts-list__item">
+            <a class="contacts-list__link" href="mailto:info@devstudio.com"
+              ><svg class="contacts-list__icon" width="16" height="12">
+                <use href="./images/symbol-defs.svg#email"></use>
+              </svg>
+              <span>info@devstudio.com</span></a
+            >
+          </li>
+          <li class="contacts-list__item">
+            <a class="contacts-list__link" href="tel:+380961111111">
+              <svg class="contacts-list__icon" width="10" height="16">
+                <use href="./images/symbol-defs.svg#smartphone"></use>
+              </svg>
+              <span>+38 096 111 11 11</span></a
+            >
+          </li>
+        </ul>
 
         <div class="mobile-modal" data-menu>
           <ul class="modal__links-list">
@@ -81,7 +83,7 @@
                 class="modal__contacts-list__link"
                 href="mailto:info@devstudio.com"
                 ><svg class="modal__contacts-list__icon" width="16" height="12">
-                  <use href="./images(studio)/symbol-defs.svg#email"></use>
+                  <use href="./images/symbol-defs.svg#email"></use>
                 </svg>
                 <span>info@devstudio.com</span></a
               >
@@ -89,7 +91,7 @@
             <li class="modal__contacts-list__item">
               <a class="modal__contacts-list__link" href="tel:+380961111111">
                 <svg class="modal__contacts-list__icon" width="10" height="16">
-                  <use href="./images(studio)/symbol-defs.svg#smartphone"></use>
+                  <use href="./images/symbol-defs.svg#smartphone"></use>
                 </svg>
                 <span>+38 096 111 11 11</span></a
               >
@@ -118,17 +120,19 @@
           <svg width="40" height="40">
             <use
               class="header__icon-menu"
-              href="./images(studio)/symbol-defs.svg#menu"
+              href="./images/symbol-defs.svg#menu"
             ></use>
             <use
               class="header__icon-cross"
-              href="./images(studio)/symbol-defs.svg#cross"
+              href="./images/symbol-defs.svg#cross"
             ></use>
           </svg>
         </button>
       </div>
     </header>
+
     <!-- Мейн -->
+
     <main>
       <!-- Кнопки -->
       <section>
@@ -152,7 +156,9 @@
           </ul>
         </div>
       </section>
+
       <!-- Карточки -->
+
       <section>
         <div class="container">
           <ul class="card-list">
@@ -160,27 +166,29 @@
               <picture>
                 <source
                   srcset="
-                    images(portfolio)/images(mobile)/1x/img1-mobile@1x.png 1x,
-                    images(portfolio)/images(mobile)/2x/img1-mobile@2x.png 2x
+                    images/portfolio/desktop/1x/img1-desktop@1x.jpg 1x,
+                    images/portfolio/desktop/2x/img1-desktop@2x.png 2x
                   "
-                  media="(max-width: 480px)"
+                  media="(min-width: 1200px)"
                 />
                 <source
                   srcset="
-                    images(portfolio)/images(tablet)/1x/img1-tablet@1x.png 1x,
-                    images(portfolio)/images(tablet)/2x/img1-tablet@2x.png 2x
+                    images/portfolio/mobile/1x/img1-mobile@1x.png 1x,
+                    images/portfolio/mobile/2x/img1-mobile@2x.png 2x
                   "
-                  media="(max-width: 768px)"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    images/portfolio/tablet/1x/img1-tablet@1x.png 1x,
+                    images/portfolio/tablet/2x/img1-tablet@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
                 />
                 <img
                   src="./images(portfolio)/img1.jpg"
                   alt="photo"
                   class="card-list__photo"
-                  srcset="
-                    images(portfolio)/images(desktop)/images(1x)/img1-desktop@1x.jpg 1x,
-                    images(portfolio)/images(desktop)/images(2x)/img1-desktop@2x.png 2x
-                  "
-                  media="(max-width: 1200px)"
                 />
               </picture>
               <div class="card-overlay">
@@ -197,30 +205,32 @@
             </li>
             <li class="card-list__item">
               <picture>
-              <source
-                  srcset="
-                    images(portfolio)/images(mobile)/1x/img2-mobile@1x.png 1x,
-                    images(portfolio)/images(mobile)/2x/img1-mobile@2x.png 2x
-                  "
-                  media="(max-width: 480px)"
-                >
                 <source
                   srcset="
-                    images(portfolio)/images(tablet)/1x/img2-tablet@1x.png 1x,
-                    images(portfolio)/images(tablet)/2x/img2-tablet@2x.png 2x
+                    images/portfolio/desktop/1x/img2-desktop@1x.jpg 1x,
+                    images/portfolio/desktop/2x/img2-desktop@2x.png 2x
                   "
-                  media="(max-width: 768px)"
-                >  
-              <img
-                src="./images(portfolio)/img2.jpg"
-                alt="photo"
-                class="card-list__photo" 
-                srcset="
-                    images(portfolio)/images(desktop)/images(1x)/img2-desktop@1x.jpg 1x,
-                    images(portfolio)/images(desktop)/images(2x)/img2-desktop@2x.png 2x
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    images/portfolio/mobile/1x/img2-mobile@1x.png 1x,
+                    images/portfolio/mobile/2x/img2-mobile@2x.png 2x
                   "
-                  media="(max-width: 1200px)"
-              />
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    images/portfolio/tablet/1x/img2-tablet@1x.png 1x,
+                    images/portfolio/tablet/2x/img2-tablet@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./images(portfolio)/img2.jpg"
+                  alt="photo"
+                  class="card-list__photo"
+                />
               </picture>
               <div class="card-overlay">
                 <p class="card-overlay__paragraph">
@@ -238,30 +248,32 @@
             </li>
             <li class="card-list__item">
               <picture>
-              <source
-                  srcset="
-                    images(portfolio)/images(mobile)/1x/img3-mobile@1x.png 1x,
-                    images(portfolio)/images(mobile)/2x/img3-mobile@2x.png 2x
-                  "
-                  media="(max-width: 480px)"
-                >
                 <source
                   srcset="
-                    images(portfolio)/images(tablet)/1x/img3-tablet@1x.png 1x,
-                    images(portfolio)/images(tablet)/2x/img3-tablet@2x.png 2x
+                    images/portfolio/desktop/1x/img3-desktop@1x.jpg 1x,
+                    images/portfolio/desktop/2x/img3-desktop@2x.png 2x
                   "
-                  media="(max-width: 768px)"
-                >
-              <img
-                src="./images(portfolio)/img3.jpg"
-                alt="photo"
-                class="card-list__photo"
-                srcset="
-                    images(portfolio)/images(desktop)/images(1x)/img3-desktop@1x.jpg 1x,
-                    images(portfolio)/images(desktop)/images(2x)/img3-desktop@2x.png 2x
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    images/portfolio/mobile/1x/img3-mobile@1x.png 1x,
+                    images/portfolio/mobile/2x/img3-mobile@2x.png 2x
                   "
-                  media="(max-width: 1200px)"
-              />
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    images/portfolio/tablet/1x/img3-tablet@1x.png 1x,
+                    images/portfolio/tablet/2x/img3-tablet@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./images(portfolio)/img3.jpg"
+                  alt="photo"
+                  class="card-list__photo"
+                />
               </picture>
               <div class="card-overlay">
                 <p class="card-overlay__paragraph">
@@ -277,30 +289,32 @@
             </li>
             <li class="card-list__item">
               <picture>
-              <source
-                  srcset="
-                    images(portfolio)/images(mobile)/1x/img4-mobile@1x.png 1x,
-                    images(portfolio)/images(mobile)/2x/img4-mobile@2x.png 2x
-                  "
-                  media="(max-width: 480px)"
-                >
                 <source
                   srcset="
-                    images(portfolio)/images(tablet)/1x/img4-tablet@1x.png 1x,
-                    images(portfolio)/images(tablet)/2x/img4-tablet@2x.png 2x
+                    images/portfolio/desktop/1x/img4-desktop@1x.jpg 1x,
+                    images/portfolio/desktop/2x/img4-desktop@2x.png 2x
                   "
-                  media="(max-width: 768px)"
-                >
-              <img
-                src="./images(portfolio)/img4.jpg"
-                alt="photo"
-                class="card-list__photo"
-                srcset="
-                    images(portfolio)/images(desktop)/images(1x)/img4-desktop@1x.jpg 1x,
-                    images(portfolio)/images(desktop)/images(2x)/img4-desktop@2x.png 2x
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    images/portfolio/mobile/1x/img4-mobile@1x.png 1x,
+                    images/portfolio/mobile/2x/img4-mobile@2x.png 2x
                   "
-                  media="(max-width: 1200px)"
-              />
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    images/portfolio/tablet/1x/img4-tablet@1x.png 1x,
+                    images/portfolio/tablet/2x/img4-tablet@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./images(portfolio)/img4.jpg"
+                  alt="photo"
+                  class="card-list__photo"
+                />
               </picture>
               <div class="card-overlay">
                 <p class="card-overlay__paragraph">
@@ -316,30 +330,32 @@
             </li>
             <li class="card-list__item">
               <picture>
-              <source
-                  srcset="
-                    images(portfolio)/images(mobile)/1x/img5-mobile@1x.png 1x,
-                    images(portfolio)/images(mobile)/2x/img5-mobile@2x.png 2x
-                  "
-                  media="(max-width: 480px)"
-                >
                 <source
                   srcset="
-                    images(portfolio)/images(tablet)/1x/img5-tablet@1x.png 1x,
-                    images(portfolio)/images(tablet)/2x/img5-tablet@2x.png 2x
+                    images/portfolio/desktop/1x/img5-desktop@1x.jpg 1x,
+                    images/portfolio/desktop/2x/img5-desktop@2x.png 2x
                   "
-                  media="(max-width: 768px)"
-                >
-              <img
-                src="./images(portfolio)/img5.jpg"
-                alt="photo"
-                class="card-list__photo"
-                srcset="
-                    images(portfolio)/images(desktop)/images(1x)/img5-desktop@1x.jpg 1x,
-                    images(portfolio)/images(desktop)/images(2x)/img5-desktop@2x.png 2x
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    images/portfolio/mobile/1x/img5-mobile@1x.png 1x,
+                    images/portfolio/mobile/2x/img5-mobile@2x.png 2x
                   "
-                  media="(max-width: 1200px)"
-              />
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    images/portfolio/tablet/1x/img5-tablet@1x.png 1x,
+                    images/portfolio/tablet/2x/img5-tablet@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./images(portfolio)/img5.jpg"
+                  alt="photo"
+                  class="card-list__photo"
+                />
               </picture>
               <div class="card-overlay">
                 <p class="card-overlay__paragraph">
@@ -356,30 +372,32 @@
             </li>
             <li class="card-list__item">
               <picture>
-              <source
-                  srcset="
-                    images(portfolio)/images(mobile)/1x/img6-mobile@1x.png 1x,
-                    images(portfolio)/images(mobile)/2x/img6-mobile@2x.png 2x
-                  "
-                  media="(max-width: 480px)"
-                >
                 <source
                   srcset="
-                    images(portfolio)/images(tablet)/1x/img6-tablet@1x.png 1x,
-                    images(portfolio)/images(tablet)/2x/img6-tablet@2x.png 2x
+                    images/portfolio/desktop/1x/img6-desktop@1x.jpg 1x,
+                    images/portfolio/desktop/2x/img6-desktop@2x.png 2x
                   "
-                  media="(max-width: 768px)"
-                >
-              <img
-                src="./images(portfolio)/img6.jpg"
-                alt="photo"
-                class="card-list__photo"
-                srcset="
-                    images(portfolio)/images(desktop)/images(1x)/img6-desktop@1x.jpg 1x,
-                    images(portfolio)/images(desktop)/images(2x)/img6-desktop@2x.png 2x
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    images/portfolio/mobile/1x/img6-mobile@1x.png 1x,
+                    images/portfolio/mobile/2x/img6-mobile@2x.png 2x
                   "
-                  media="(max-width: 1200px)"
-              />
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    images/portfolio/tablet/1x/img6-tablet@1x.png 1x,
+                    images/portfolio/tablet/2x/img6-tablet@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./images(portfolio)/img6.jpg"
+                  alt="photo"
+                  class="card-list__photo"
+                />
               </picture>
               <div class="card-overlay">
                 <p class="card-overlay__paragraph">
@@ -396,30 +414,34 @@
               </div>
             </li>
             <li class="card-list__item">
-              <source
-                  srcset="
-                    images(portfolio)/images(mobile)/1x/img7-mobile@1x.png 1x,
-                    images(portfolio)/images(mobile)/2x/img7-mobile@2x.png 2x
-                  "
-                  media="(max-width: 480px)"
-                >
+              <picture>
                 <source
                   srcset="
-                    images(portfolio)/images(tablet)/1x/img7-tablet@1x.png 1x,
-                    images(portfolio)/images(tablet)/2x/img7-tablet@2x.png 2x
+                    images/portfolio/desktop/1x/img7-desktop@1x.jpg 1x,
+                    images/portfolio/desktop/2x/img7-desktop@2x.png 2x
                   "
-                  media="(max-width: 768px)"
-                >
-              <img
-                src="./images(portfolio)/img7.jpg"
-                alt="photo"
-                class="card-list__photo"
-                srcset="
-                    images(portfolio)/images(desktop)/images(1x)/img7-desktop@1x.jpg 1x,
-                    images(portfolio)/images(desktop)/images(2x)/img7-desktop@2x.png 2x
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    images/portfolio/mobile/1x/img7-mobile@1x.png 1x,
+                    images/portfolio/mobile/2x/img7-mobile@2x.png 2x
                   "
-                  media="(max-width: 1200px)"
-              />
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    images/portfolio/tablet/1x/img7-tablet@1x.png 1x,
+                    images/portfolio/tablet/2x/img7-tablet@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./images(portfolio)/img7.jpg"
+                  alt="photo"
+                  class="card-list__photo"
+                />
+              </picture>
               <div class="card-overlay">
                 <p class="card-overlay__paragraph">
                   Технокрик це сучасний майданчик поширення коронавірусу.
@@ -436,30 +458,32 @@
             </li>
             <li class="card-list__item">
               <picture>
-              <source
-                  srcset="
-                    images(portfolio)/images(mobile)/1x/img8-mobile@1x.png 1x,
-                    images(portfolio)/images(mobile)/2x/img8-mobile@2x.png 2x
-                  "
-                  media="(max-width: 480px)"
-                >
                 <source
                   srcset="
-                    images(portfolio)/images(tablet)/1x/img8-tablet@1x.png 1x,
-                    images(portfolio)/images(tablet)/2x/img8-tablet@2x.png 2x
+                    images/portfolio/desktop/1x/img8-desktop@1x.jpg 1x,
+                    images/portfolio/desktop/2x/img8-desktop@2x.png 2x
                   "
-                  media="(max-width: 768px)"
-                >
-              <img
-                src="./images(portfolio)/img8.jpg"
-                alt="photo"
-                class="card-list__photo"
-                srcset="
-                    images(portfolio)/images(desktop)/images(1x)/img8-desktop@1x.jpg 1x,
-                    images(portfolio)/images(desktop)/images(2x)/img8-desktop@2x.png 2x
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    images/portfolio/mobile/1x/img8-mobile@1x.png 1x,
+                    images/portfolio/mobile/2x/img8-mobile@2x.png 2x
                   "
-                  media="(max-width: 1200px)"
-              />
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    images/portfolio/tablet/1x/img8-tablet@1x.png 1x,
+                    images/portfolio/tablet/2x/img8-tablet@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./images(portfolio)/img8.jpg"
+                  alt="photo"
+                  class="card-list__photo"
+                />
               </picture>
               <div class="card-overlay">
                 <p class="card-overlay__paragraph">
@@ -475,30 +499,32 @@
             </li>
             <li class="card-list__item">
               <picture>
-              <source
-                  srcset="
-                    images(portfolio)/images(mobile)/1x/img9-mobile@1x.png 1x,
-                    images(portfolio)/images(mobile)/2x/img9-mobile@2x.png 2x
-                  "
-                  media="(max-width: 480px)"
-                >
                 <source
                   srcset="
-                    images(portfolio)/images(tablet)/1x/img9-tablet@1x.png 1x,
-                    images(portfolio)/images(tablet)/2x/img9-tablet@2x.png 2x
+                    images/portfolio/desktop/1x/img9-desktop@1x.jpg 1x,
+                    images/portfolio/desktop/2x/img9-desktop@2x.png 2x
                   "
-                  media="(max-width: 768px)"
-                >
-              <img
-                src="./images(portfolio)/img9.jpg"
-                alt="photo"
-                class="card-list__photo"
-                srcset="
-                    images(portfolio)/images(desktop)/images(1x)/img9-desktop@1x.jpg 1x,
-                    images(portfolio)/images(desktop)/images(2x)/img9-desktop@2x.png 2x
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    images/portfolio/mobile/1x/img9-mobile@1x.png 1x,
+                    images/portfolio/mobile/2x/img9-mobile@2x.png 2x
                   "
-                  media="(max-width: 1200px)"
-              />
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    images/portfolio/tablet/1x/img9-tablet@1x.png 1x,
+                    images/portfolio/tablet/2x/img9-tablet@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./images(portfolio)/img9.jpg"
+                  alt="photo"
+                  class="card-list__photo"
+                />
               </picture>
               <div class="card-overlay">
                 <p class="card-overlay__paragraph">
@@ -516,70 +542,75 @@
         </div>
       </section>
     </main>
+
+    <!-- Футер  -->
+
     <footer>
-      <section class="info-section">
-        <h2 class="logo">Web<span class="logo logo--footer">Studio</span></h2>
-        <address class="place">м. Київ, пр-т Лесі Українки, 26</address>
+      <div class="container">
+        <section class="info-section">
+          <h2 class="logo">Web<span class="logo logo--footer">Studio</span></h2>
+          <address class="place">м. Київ, пр-т Лесі Українки, 26</address>
 
-        <ul class="info-list">
-          <li class="info-list__item">info@example.com</li>
-          <li class="info-list__item">tel:099 111 11 11</li>
-        </ul>
-      </section>
+          <ul class="info-list">
+            <li class="info-list__item">info@example.com</li>
+            <li class="info-list__item">tel:099 111 11 11</li>
+          </ul>
+        </section>
 
-      <!-- Секція приєднуйтесь -->
+        <!-- Секція приєднуйтесь -->
 
-      <section class="join-section">
-        <h3 class="join-section__title">Приєднуйтесь</h3>
-        <ul class="join-list">
-          <li class="join-list__item">
-            <a class="join-list__link">
-              <svg class="join-list__icon" width="20" height="20">
-                <use href="./images(studio)/symbol-defs.svg#instagram"></use>
+        <section class="join-section">
+          <h3 class="join-section__title">Приєднуйтесь</h3>
+          <ul class="join-list">
+            <li class="join-list__item">
+              <a class="join-list__link">
+                <svg class="join-list__icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="join-list__item">
+              <a class="join-list__link">
+                <svg class="join-list__icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="join-list__item">
+              <a class="join-list__link">
+                <svg class="join-list__icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="join-list__item">
+              <a class="join-list__link">
+                <svg class="join-list__icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Секція підпису -->
+
+        <section class="subscribing-section">
+          <h3 class="subscribing-section__title">Підпишіться на розсилку</h3>
+          <div class="subscribing-section__content">
+            <textarea
+              class="subscribing-section__input"
+              placeholder="E-mail"
+            ></textarea>
+            <button type="submit" class="subscribing-section__btn">
+              <span> Підписатись </span>
+              <svg class="subscribing-section__icon">
+                <use href="./images/symbol-defs.svg#telegram"></use>
               </svg>
-            </a>
-          </li>
-          <li class="join-list__item">
-            <a class="join-list__link">
-              <svg class="join-list__icon" width="20" height="20">
-                <use href="./images(studio)/symbol-defs.svg#twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="join-list__item">
-            <a class="join-list__link">
-              <svg class="join-list__icon" width="20" height="20">
-                <use href="./images(studio)/symbol-defs.svg#facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="join-list__item">
-            <a class="join-list__link">
-              <svg class="join-list__icon" width="20" height="20">
-                <use href="./images(studio)/symbol-defs.svg#linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </section>
-
-      <!-- Секція підпису -->
-
-      <section class="subscribing-section">
-        <h3 class="subscribing-section__title">Підпишіться на розсилку</h3>
-        <div class="subscribing-section__content">
-          <textarea
-            class="subscribing-section__input"
-            placeholder="E-mail"
-          ></textarea>
-          <button type="submit" class="subscribing-section__btn">
-            Підписатись
-            <svg width="24" height="24">
-              <use href="./images(studio)/symbol-defs.svg#telegram"></use>
-            </svg>
-          </button>
-        </div>
-      </section>
+            </button>
+          </div>
+        </section>
+      </div>
     </footer>
     <script src="./js/mobile-menu.js"></script>
   </body>

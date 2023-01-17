@@ -1,7 +1,7 @@
 .modal {
     position: fixed;
     position: relative;
-    width: 450px;
+    max-width: 528px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -12,10 +12,6 @@
     z-index: 2;
     transition: transform 250ms cubic-bezier(0.165, 0.84, 0.44, 1) 500ms;
 padding: 40px;
-
-    @media screen and (min-width: 1200px) {
-    width: 528px;
-    }
 }
 
 .modal__list {

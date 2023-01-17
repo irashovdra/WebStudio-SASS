@@ -24,19 +24,13 @@
     font-size: 36px;
     line-height: 1.2;
     }  
-    
-    
 }
 
 .team-list {
   gap: 30px;
-    list-style: none;
-
-      @media screen and (min-width: 768px) {
     display: flex; 
     flex-wrap: wrap;   
     justify-content: center;
-    }  
 }
 
 .team-list__card {
@@ -54,15 +48,6 @@ padding-bottom: 24px;
     padding-bottom: 30px;
     }  
 }
-
-.team-list__photo {
-    display: block;
-    width: 450px;
-
-      @media screen and (min-width: 768px) {
-     width: 270px;    
-    }  
-  }
 
 .team-list__card-title {
   font-weight: 500;

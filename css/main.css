@@ -199,18 +199,6 @@ nav {
   color: #2196F3;
 }
 
-.links-link--active-page::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 44px;
-  display: block;
-  border-radius: 4px;
-  height: 4px;
-  background-color: #2196F3;
-  width: 100%;
-}
-
 /* Список контактів */
 .contacts-list {
   display: none;
@@ -247,6 +235,7 @@ nav {
 }
 
 .contacts-list__link {
+  display: flex;
   font-size: 14px;
   align-items: center;
   color: #757575;
@@ -513,17 +502,13 @@ nav {
 }
 
 .about-list {
+  display: flex;
   gap: 30px;
   margin-top: 60px;
   margin-bottom: 60px;
   list-style: none;
-}
-@media screen and (min-width: 768px) {
-  .about-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+  flex-wrap: wrap;
+  justify-content: center;
 }
 @media screen and (min-width: 1200px) {
   .about-list {
@@ -855,18 +840,18 @@ nav {
 }
 
 .place {
+  margin-top: 20px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-  letter-spacing: 0, 3em;
+  letter-spacing: 0.03em;
   color: #FFFFFF;
-  margin-bottom: 8px;
+  margin-bottom: 9px;
   font-style: normal;
   text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .place {
-    margin-bottom: 20px;
     text-align: left;
   }
 }
@@ -915,6 +900,11 @@ nav {
   color: #FFFFFF;
   margin-bottom: 20px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .join-section__title {
+    text-align: left;
+  }
 }
 
 .join-list {
@@ -981,9 +971,10 @@ nav {
   height: 50px;
   background-color: #2F303A;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  padding-top: 15px;
-  padding-left: 15px;
+  padding: 15px;
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -1035,6 +1026,8 @@ nav {
   background-color: white;
   padding-left: 40px;
   padding-top: 48px;
+  z-index: 1000;
+  padding-bottom: 48px;
 }
 @media screen and (min-width: 768px) {
   .mobile-modal {
@@ -1071,18 +1064,6 @@ nav {
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
   display: block;
-}
-
-.modal__links-list__link--active-page::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 44px;
-  display: block;
-  border-radius: 4px;
-  height: 4px;
-  background-color: #2196F3;
-  width: 100%;
 }
 
 @media screen and (min-width: 768px) {

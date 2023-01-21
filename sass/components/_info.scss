@@ -13,17 +13,17 @@
 }
 
 .place {
+    margin-top: 20px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
-    letter-spacing: 0,03em;
+    letter-spacing: 0.03em;
     color: $white-text;
-    margin-bottom: 8px;
+    margin-bottom: 9px;
     font-style: normal;
     text-align: center;
 
     @media screen and (min-width: 1200px) {
-    margin-bottom: 20px;
     text-align: left;
     }  
 }

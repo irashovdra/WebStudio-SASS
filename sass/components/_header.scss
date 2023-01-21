@@ -91,17 +91,17 @@ nav {
   color: $accent;
 }
 
-.links-link--active-page::after {
-    content: "";
-  position: absolute;
-  left: 0;
-  top: 44px;
-  display: block;
-  border-radius: 4px;
-  height: 4px;
-  background-color: $accent;
-  width: 100%;
-}
+// .links-link--active-page::after {
+//     content: "";
+//   position: absolute;
+//   left: 0;
+//   top: 44px;
+//   display: block;
+//   border-radius: 4px;
+//   height: 4px;
+//   background-color: $accent;
+//   width: 100%;
+// }
 
 /* Список контактів */
 
@@ -136,6 +136,7 @@ nav {
 }
 
 .contacts-list__link {
+  display: flex;
     font-size: 14px;
     align-items: center;
     color: #757575;

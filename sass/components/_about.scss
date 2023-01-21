@@ -1,14 +1,11 @@
 .about-list {
+    display: flex;
     gap: 30px;
     margin-top: 60px;
     margin-bottom: 60px;
     list-style: none;
-
-    @media screen and (min-width: 768px) {
-        display: flex;
-         flex-wrap: wrap;
+    flex-wrap: wrap;
         justify-content: center;
-    }  
 
     @media screen and (min-width: 1200px) {
     margin-top: 94px;

@@ -8,7 +8,8 @@
     background-color: white;
     padding-left: 40px;
     padding-top: 48px;
-
+    z-index: 1000;
+    padding-bottom: 48px;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -46,17 +47,17 @@
     display: block;
 }
 
-.modal__links-list__link--active-page::after {
-    content: "";
-  position: absolute;
-  left: 0;
-  top: 44px;
-  display: block;
-  border-radius: 4px;
-  height: 4px;
-  background-color: $accent;
-  width: 100%;
-}
+// .modal__links-list__link--active-page::after {
+//     content: "";
+//   position: absolute;
+//   left: 0;
+//   top: 44px;
+//   display: block;
+//   border-radius: 4px;
+//   height: 4px;
+//   background-color: $accent;
+//   width: 100%;
+// }
 
 .modal__links-list__item:last-child {
     @media screen and (min-width: 768px) {

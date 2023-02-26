@@ -2,3 +2,15 @@
     align-items: center;
 justify-content: center;
 }
+
+@mixin grid($grid-gap) {
+    display: flex;
+    gap: $grid-gap;
+    justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@mixin grid-card($grid-number: 3, $grid-gap) {
+    flex-basis: calc((100% / $grid-number) - ($grid-gap * ($grid-number - 1)));
+}

@@ -18,12 +18,13 @@
 
 .work-list {
     @extend %list;
+    @include grid(30px)
 }
 
 .work-list__item {
-    margin-right: 30px;
     position: relative;
     display: block;
+    @include grid-card($grid-gap: 30px);
 }
 
 .work-list__item:last-child {

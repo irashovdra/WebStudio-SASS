@@ -13,17 +13,17 @@
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    min-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    min-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    min-width: 1200px;
   }
 }
 
@@ -306,7 +306,6 @@ nav {
     line-height: 60px;
     text-align: center;
     letter-spacing: 0.06em;
-    text-transform: uppercase;
   }
 }
 
@@ -504,11 +503,13 @@ nav {
 .about-list {
   display: flex;
   gap: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
   margin-top: 60px;
   margin-bottom: 60px;
   list-style: none;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 @media screen and (min-width: 1200px) {
   .about-list {
@@ -518,17 +519,7 @@ nav {
 }
 
 .about-list__item {
-  width: 450px;
-}
-@media screen and (max-width: 480px) {
-  .about-list__item {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 768px) {
-  .about-list__item {
-    width: 270px;
-  }
+  flex-basis: calc(25% - 90px);
 }
 
 .about-list__item:last-child {
@@ -608,10 +599,18 @@ nav {
   color: #212121;
 }
 
+.work-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .work-list__item {
-  margin-right: 30px;
   position: relative;
   display: block;
+  flex-basis: calc(33.3333333333% - 60px);
 }
 
 .work-list__item:last-child {
@@ -692,23 +691,19 @@ nav {
 }
 
 .team-list {
-  gap: 30px;
   display: flex;
-  flex-wrap: wrap;
+  gap: 30px;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .team-list__card {
+  flex-basis: calc(25% - 90px);
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  width: 450px;
   padding-bottom: 24px;
-}
-@media screen and (min-width: 768px) {
-  .team-list__card {
-    width: 270px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .team-list__card {
@@ -795,10 +790,15 @@ nav {
 
 .clients-list {
   display: flex;
-  list-style: none;
-  flex-wrap: wrap;
-  justify-content: center;
   gap: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.clients-list__item {
+  flex-basis: calc(16.6666666667% - 150px);
 }
 
 .clients-list__link {

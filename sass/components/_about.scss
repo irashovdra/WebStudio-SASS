@@ -1,73 +1,83 @@
 .about-list {
-    @include grid(30px);
-    gap: 30px;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    list-style: none;
+  @include grid(30px);
+  gap: 30px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  list-style: none;
 
-    @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     margin-top: 94px;
     margin-bottom: 94px;
-    }  
+  }
 }
 
 .about-list__item {
+  @include grid-card($grid-number: 1, $grid-gap: 30px);
+
+  // width: 100%;
+
+  @media screen and (min-width: 600px) {
+    // width: 270px;
+    @include grid-card($grid-number: 2, $grid-gap: 30px);
+  }
+
+  @media screen and (min-width: 1000px) {
     @include grid-card($grid-number: 4, $grid-gap: 30px);
+  }
 }
 
 .about-list__item:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 
-      @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     margin-right: 0;
-    }  
+  }
 }
 
 .about-list__item::before {
-    width: 100%;
-    height: 120px;
-    display: block;
-    background: $background-color;
-border-radius: 4px;
-display: flex;
-@include center();
-background-size: 70px;
-content: "";
-background-repeat: no-repeat;
-background-position: center;
+  width: 100%;
+  height: 120px;
+  display: block;
+  background: $background-color;
+  border-radius: 4px;
+  display: flex;
+  @include center();
+  background-size: 70px;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .about-list__item:nth-child(1)::before {
-    background-image: url(../../images/desktop/1x/abouticon1.png);
-    }
-    
+  background-image: url(../../images/desktop/1x/abouticon1.png);
+}
 
 .about-list__item:nth-child(2)::before {
-    background-image: url(../../images/desktop/1x/abouticon2.png);
+  background-image: url(../../images/desktop/1x/abouticon2.png);
 }
 
 .about-list__item:nth-child(3)::before {
-    background-image: url(../../images/desktop/1x/abouticon3.png);
+  background-image: url(../../images/desktop/1x/abouticon3.png);
 }
 
 .about-list__item:nth-child(4)::before {
-    background-image: url(../../images/desktop/1x/abouticon4-desktop@1x.png);
+  background-image: url(../../images/desktop/1x/abouticon4-desktop@1x.png);
 }
 
 .about-list__name {
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $main-text;
-    margin-top: 30px;
-    margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $main-text;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .about-list__description {
-       font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    color: #757575;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #757575;
 }

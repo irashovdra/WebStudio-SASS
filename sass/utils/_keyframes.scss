@@ -1,0 +1,36 @@
+@keyframes to-bottom {
+  0% {
+    transform: translateY(-100px) scale(0);
+    opacity: 0;
+    color: $white-text;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translate(0) scale(1);
+    opacity: 1;
+    color: $accent;
+  }
+}
+
+@keyframes to-top {
+    0% {
+        transform: translateY(100px) rotate(180deg);
+        opacity: 0;
+    background-color: $description-color;
+    }
+
+    50% {
+opacity: 0.5;
+    background-color: $secondary-color;
+    }
+
+    100% {
+        transform: translate(0) rotate(0deg);
+        opacity: 1;
+    background-color: $accent;
+    }
+}

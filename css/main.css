@@ -332,6 +332,14 @@ nav {
   }
 }
 
+.hero__title-animation {
+  animation: to-right 1s linear 2s both;
+}
+
+.hero__btn-animation {
+  animation: to-top 1s linear 1s both;
+}
+
 .modal {
   position: fixed;
   position: relative;

@@ -3,7 +3,6 @@
   max-width: 1600px;
   background-size: cover;
   padding: 118px 60px 118px 60px;
-  outline: 4px solid red;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -94,6 +93,15 @@
   background: $accent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms, 
+  color 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms,
+  box-shadow 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
+
+  &:hover {
+    box-shadow: 0px 0px 10px 4px $accent;
+    background-color: transparent;
+    color: $accent;
+  }
 
   @media screen and (min-width: 1200px) {
     padding: 10px 32px 10px 32px;
@@ -103,7 +111,7 @@
 // Animations 
 
 .hero__title-animation {
-animation: to-right 1s linear 2s both;
+animation: to-right 1s linear both;
 }
 
 .hero__btn-animation {

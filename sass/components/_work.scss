@@ -1,75 +1,75 @@
 .work-section {
-    display: none;
+  display: none;
 
-    @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     display: block;
     margin-bottom: 94px;
-    }  
+  }
 }
 
 .work-section__title {
-    font-size: 36px;
-    line-height: 1.2;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin-bottom: 50px;
-    color: $main-text;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  color: $main-text;
 }
 
 .work-list {
-    @extend %list;
-    @include grid(30px)
+  @extend %list;
+  @include grid(30px);
 }
 
 .work-list__item {
-    position: relative;
-    display: block;
-    @include grid-card($grid-gap: 30px);
+  position: relative;
+  display: block;
+  @include grid-card($grid-gap: 30px);
 }
 
 .work-list__item:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .work-list__item:hover .work-inscription {
-    opacity: 1;
+  opacity: 1;
 }
 
 .work-list__item-hover {
-    position: relative;
-    display: block;
+  position: relative;
+  display: block;
 }
 
 .work-list__item-hover::before {
-content: "";
-    position: absolute;
-    background: rgba(47, 48, 58, 0.8);
-    width: 370px;
-height: 70px;
-opacity: 0;
-left: 0;
-bottom: 0;
+  content: "";
+  position: absolute;
+  background: rgba(47, 48, 58, 0.8);
+  width: 370px;
+  height: 70px;
+  opacity: 0;
+  left: 0;
+  bottom: 0;
 }
 
 .work-inscription {
-    font-size: 14px;
-line-height: 1.1;
-text-align: center;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: $white-text;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    background: rgba(47, 48, 58, 0.8);
-    width: 370px;
-height: 70px;
-opacity: 0;
-display: flex;
-align-items: center;
-justify-content: center;
+  font-size: 14px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white-text;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(47, 48, 58, 0.8);
+  width: 351px;
+  height: 70px;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .work-inscription:hover {
-    opacity: 1;
+  opacity: 1;
 }

@@ -16,16 +16,35 @@
   }
 }
 
+@keyframes to-right {
+    0% {
+        transform: translateX(-500px) scale(0);
+        opacity: 0;
+    color: $main-text;
+    }
+
+    50% {
+        opacity: 0.5;
+    color: $accent;
+    }
+
+    100% {
+        transform: translate(0) scale(1);
+        opacity: 1;
+    color: $white-text
+    }
+}
+
 @keyframes to-top {
     0% {
         transform: translateY(100px) rotate(180deg);
         opacity: 0;
-    background-color: $description-color;
+    background-color: $main-text;
     }
 
     50% {
 opacity: 0.5;
-    background-color: $secondary-color;
+    background-color: $white-text;
     }
 
     100% {

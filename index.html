@@ -15,6 +15,15 @@
       href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -23,7 +32,7 @@
 
     <header class="header">
       <div class="container">
-        <a href="/" class="logo">Web<span class="logo--header">Studio</span></a>
+        <a href="/" class="logo animate__heartBeat">Web<span class="logo--header">Studio</span></a>
         <nav>
           <ul class="links-list">
             <li class="links-list__item">
@@ -231,29 +240,29 @@
       <!-- Чому ми? -->
       <section class="about-section">
         <div class="container">
-          <ul class="about-list">
-            <li class="about-list__item">
+          <ul class="about-list ">
+            <li class="about-list__item" data-aos="fade-up" data-aos-duration="600">
               <h3 class="about-list__name">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="about-list__description">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Voluptatem veritatis exercitationem velit magnam iure.
               </p>
             </li>
-            <li class="about-list__item">
+            <li class="about-list__item" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600">
               <h3 class="about-list__name">ПунктуальнІсть</h3>
               <p class="about-list__description">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Voluptatem veritatis exercitationem velit magnam iure.
               </p>
             </li>
-            <li class="about-list__item">
+            <li class="about-list__item" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1200">
               <h3 class="about-list__name">ПЛАНУВАННЯ</h3>
               <p class="about-list__description">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Voluptatem veritatis exercitationem velit magnam iure.
               </p>
             </li>
-            <li class="about-list__item">
+            <li class="about-list__item" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1800">
               <h3 class="about-list__name">СУЧАСНІ ТЕхнології</h3>
               <p class="about-list__description">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -270,7 +279,7 @@
         <div class="container">
           <h2 class="work-section__title">Чим ми займаємося</h2>
           <ul class="work-list">
-            <li class="work-list__item">
+            <li class="work-list__item" data-aos="fade-right" data-aos-duration="1000">
               <div class="work-list__item-hover">
                 <img
                   srcset="
@@ -284,7 +293,7 @@
                 <h3 class="work-inscription">ДЕСКТОПНІ ЗАСТОСУНКИ</h3>
               </div>
             </li>
-            <li class="work-list__item">
+            <li class="work-list__item" data-aos="fade-up" data-aos-duration="1000">
               <img
                 srcset="
                   images/desktop/1x/photo2-desktop@1x.jpg 1x,
@@ -296,7 +305,7 @@
               />
               <h3 class="work-inscription">МОБІЛЬНІ ЗАСТОСУНКИ</h3>
             </li>
-            <li class="work-list__item">
+            <li class="work-list__item" data-aos="fade-left" data-aos-duration="1000">
               <img
                 srcset="
                   images/desktop/1x/photo3-desktop@1x.jpg 1x,
@@ -318,7 +327,7 @@
         <div class="container">
           <h2 class="team-section__title">Наша команда</h2>
           <ul class="team-list">
-            <li class="team-list__card">
+            <li class="team-list__card" data-aos="zoom-in" data-aos-duration="700">
               <picture>
                 <source
                   srcset="
@@ -380,7 +389,7 @@
                 </li>
               </ul>
             </li>
-            <li class="team-list__card">
+            <li class="team-list__card" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="700">
               <picture>
                 <source
                   srcset="
@@ -443,7 +452,7 @@
                 </li>
               </ul>
             </li>
-            <li class="team-list__card">
+            <li class="team-list__card" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="1400">
               <picture>
                 <source
                   srcset="
@@ -505,7 +514,7 @@
                 </li>
               </ul>
             </li>
-            <li class="team-list__card">
+            <li class="team-list__card" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="2100">
               <picture>
                 <source
                   srcset="
@@ -577,42 +586,42 @@
         <div class="container">
           <h2 class="clients-section__title">Постійні клієнти</h2>
           <ul class="clients-list">
-            <li class="clients-list__item">
+            <li class="clients-list__item" data-aos="fade-down-right" data-aos-duration="1000">
               <a class="clients-list__link">
                 <svg class="clients-svg" width="44" height="49">
                   <use href="./images/symbol-defs.svg#icon-logo-1"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-list__item">
+            <li class="clients-list__item" data-aos="fade-down" data-aos-duration="1000">
               <a class="clients-list__link">
                 <svg class="clients-svg" width="40" height="52">
                   <use href="./images/symbol-defs.svg#icon-logo-2"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-list__item">
+            <li class="clients-list__item" data-aos="fade-up" data-aos-duration="1000">
               <a class="clients-list__link">
                 <svg class="clients-svg" width="41" height="43">
                   <use href="./images/symbol-defs.svg#icon-logo-3"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-list__item">
+            <li class="clients-list__item" data-aos="fade-down" data-aos-duration="1000">
               <a class="clients-list__link">
                 <svg class="clients-svg" width="80" height="42">
                   <use href="./images/symbol-defs.svg#icon-logo-4"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-list__item">
+            <li class="clients-list__item" data-aos="fade-up" data-aos-duration="1000">
               <a class="clients-list__link">
                 <svg class="clients-svg" width="59" height="47">
                   <use href="./images/symbol-defs.svg#icon-logo-5"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-list__item">
+            <li class="clients-list__item" data-aos="fade-down-left" data-aos-duration="1000">
               <a class="clients-list__link">
                 <svg class="clients-svg" width="88" height="45">
                   <use href="./images/symbol-defs.svg#icon-logo-6"></use>
@@ -679,7 +688,7 @@
         <section class="subscribing-section">
           <h3 class="subscribing-section__title">Підпишіться на розсилку</h3>
           <div class="subscribing-section__content">
-            <input
+            <input data-aos="flip-left" data-aos-duration="2000"
               type="text"
               class="subscribing-section__input"
               placeholder="E-mail"
@@ -715,5 +724,9 @@
       }
     </script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
   </body>
 </html>

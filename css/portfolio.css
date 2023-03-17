@@ -101,6 +101,8 @@ img {
   position: relative;
   display: flex;
   height: 60px;
+  padding-left: 30px;
+  padding-top: 5px;
 }
 @media screen and (min-width: 768px) {
   .header {

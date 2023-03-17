@@ -4,6 +4,53 @@
   display: flex;
 }
 
+@keyframes to-bottom {
+  0% {
+    transform: translateY(-100px) scale(0);
+    opacity: 0;
+    color: #FFFFFF;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(0) scale(1);
+    opacity: 1;
+    color: #2196F3;
+  }
+}
+@keyframes to-right {
+  0% {
+    transform: translateX(-500px) scale(0);
+    opacity: 0;
+    color: #212121;
+  }
+  50% {
+    opacity: 0.5;
+    color: #2196F3;
+  }
+  100% {
+    transform: translate(0) scale(1);
+    opacity: 1;
+    color: #FFFFFF;
+  }
+}
+@keyframes to-top {
+  0% {
+    transform: translateY(100px) rotate(180deg);
+    opacity: 0;
+    background-color: #212121;
+  }
+  50% {
+    opacity: 0.5;
+    background-color: #FFFFFF;
+  }
+  100% {
+    transform: translate(0) rotate(0deg);
+    opacity: 1;
+    background-color: #2196F3;
+  }
+}
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -106,6 +153,8 @@ img {
   position: relative;
   display: flex;
   height: 60px;
+  padding-left: 30px;
+  padding-top: 5px;
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -325,6 +374,12 @@ nav {
   background: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms, color 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms, box-shadow 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
+}
+.hero-section__btn:hover {
+  box-shadow: 0px 0px 10px 4px #2196F3;
+  background-color: transparent;
+  color: #2196F3;
 }
 @media screen and (min-width: 1200px) {
   .hero-section__btn {
@@ -333,7 +388,7 @@ nav {
 }
 
 .hero__title-animation {
-  animation: to-right 1s linear 2s both;
+  animation: to-right 1s linear both;
 }
 
 .hero__btn-animation {
@@ -667,7 +722,7 @@ nav {
   left: 0;
   bottom: 0;
   background: rgba(47, 48, 58, 0.8);
-  width: 370px;
+  width: 351px;
   height: 70px;
   opacity: 0;
   display: flex;
@@ -723,6 +778,11 @@ nav {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 24px;
+  transition: transform 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms, box-shadow 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
+}
+.team-list__card:hover {
+  box-shadow: 0px 0px 10px 4px #2196F3;
+  transform: scale(1.05);
 }
 @media screen and (min-width: 768px) {
   .team-list__card {

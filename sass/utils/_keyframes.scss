@@ -53,3 +53,17 @@ opacity: 0.5;
     background-color: $accent;
     }
 }
+
+@keyframes bg {
+    0% {
+      background-color: $background-color;
+    }
+
+    50% {
+      background-color: $white-text;
+    }
+
+    100% {
+      background-color: rgb(232, 229, 229);
+    }
+}

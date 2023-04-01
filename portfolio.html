@@ -16,15 +16,15 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/portfolio.min.css" />
-        <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"
-  />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -32,7 +32,9 @@
 
     <header class="header">
       <div class="container">
-        <a href="/" class="logo animate__heartBeat">Web<span class="logo--header">Studio</span></a>
+        <a href="/" class="logo animate__heartBeat"
+          >Web<span class="logo--header">Studio</span></a
+        >
         <nav>
           <ul class="links-list">
             <li class="links-list__item">
@@ -68,8 +70,6 @@
             >
           </li>
         </ul>
-
-        
 
         <div class="mobile-modal" data-menu>
           <ul class="modal__links-list">
@@ -120,7 +120,8 @@
               <a
                 href="https://www.facebook.com/legal_consent/?consent_mode=5&entry_product=cg_block&from_messenger=0&d=AcXO3EizMTrzidpX2iwysdOJNLmTWD3061e2Bp2aEvahUTHKVxC-UUzoF00Uf2FNBToucNcOESL3%3Ace6db54721b63b75663ed4da2c71b49e"
               >
-             Facebook </a>
+                Facebook
+              </a>
             </li>
             <li class="social-medias__item">
               <a href="https://www.linkedin.com/">Linkedin</a>
@@ -174,7 +175,11 @@
       <section>
         <div class="container">
           <ul class="card-list">
-            <li class="card-list__item">
+            <li
+              class="card-list__item"
+              data-aos="fade-left"
+              data-aos-duration="400"
+            >
               <picture>
                 <source
                   srcset="
@@ -215,7 +220,12 @@
                 <p class="card-description__paragraph">Веб-сайт</p>
               </div>
             </li>
-            <li class="card-list__item">
+            <li
+              class="card-list__item"
+              data-aos="fade-left"
+              data-aos-duration="400"
+              data-aos-delay="800"
+            >
               <picture>
                 <source
                   srcset="
@@ -258,7 +268,12 @@
                 <p class="card-description__paragraph">Дизайн</p>
               </div>
             </li>
-            <li class="card-list__item">
+            <li
+              class="card-list__item"
+              data-aos="fade-left"
+              data-aos-duration="400"
+              data-aos-delay="1200"
+            >
               <picture>
                 <source
                   srcset="
@@ -299,7 +314,12 @@
                 <p class="card-description__paragraph">Застосунок</p>
               </div>
             </li>
-            <li class="card-list__item">
+            <li
+              class="card-list__item"
+              data-aos="fade-right"
+              data-aos-duration="400"
+              data-aos-delay="400"
+            >
               <picture>
                 <source
                   srcset="
@@ -340,7 +360,12 @@
                 <p class="card-description__paragraph">Маркетинг</p>
               </div>
             </li>
-            <li class="card-list__item">
+            <li
+              class="card-list__item"
+              data-aos="fade-right"
+              data-aos-duration="400"
+              data-aos-delay="800"
+            >
               <picture>
                 <source
                   srcset="
@@ -382,7 +407,12 @@
                 <p class="card-description__paragraph">Застосунок</p>
               </div>
             </li>
-            <li class="card-list__item">
+            <li
+              class="card-list__item"
+              data-aos="fade-right"
+              data-aos-duration="400"
+              data-aos-delay="1200"
+            >
               <picture>
                 <source
                   srcset="
@@ -425,7 +455,12 @@
                 <p class="card-description__paragraph">Веб-сайт</p>
               </div>
             </li>
-            <li class="card-list__item">
+            <li
+              class="card-list__item"
+              data-aos="fade-left"
+              data-aos-duration="400"
+              data-aos-delay="400"
+            >
               <picture>
                 <source
                   srcset="
@@ -468,7 +503,12 @@
                 <p class="card-description__paragraph">Дизайн</p>
               </div>
             </li>
-            <li class="card-list__item">
+            <li
+              class="card-list__item"
+              data-aos="fade-left"
+              data-aos-duration="400"
+              data-aos-delay="800"
+            >
               <picture>
                 <source
                   srcset="
@@ -509,7 +549,12 @@
                 <p class="card-description__paragraph">Маркетинг</p>
               </div>
             </li>
-            <li class="card-list__item">
+            <li
+              class="card-list__item"
+              data-aos="fade-left"
+              data-aos-duration="400"
+              data-aos-delay="1200"
+            >
               <picture>
                 <source
                   srcset="
@@ -625,5 +670,9 @@
       </div>
     </footer>
     <script src="./js/mobile-menu.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
